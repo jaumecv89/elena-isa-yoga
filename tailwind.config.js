@@ -26,6 +26,9 @@ export default {
 				innerText: "#FEFAF6",
 				textGray: "#FFFFFF66",
 			},
+			backgroundImage: {
+				"about-image": "url('/src/assets/about-image.jpeg')"
+			}
 		},
 	},
 	plugins: [],
