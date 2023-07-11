@@ -15,13 +15,16 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				josefin: ["Josefin Sans", "sans-serif"],
-				yeseva: ["Yeseva One", "cursive"],
+				primary: ["Marcellus", "serif"],
+				secondary: ["Tenor Sans", "sans-serif"],
 			},
 			colors: {
-				background: "#F2D5B7",
-				primary: "#B57158",
-				secondary: "#55342B",
+				background: "#FEF4EA",
+				primary: "#C47A5E",
+				primaryAccent: "#AD6C53",
+				secondary: "#513125",
+				innerText: "#FEFAF6",
+				textGray: "#FFFFFF66",
 			},
 		},
 	},

@@ -1,12 +1,15 @@
+import Footer from "./sections/Footer"
 import Nav from "./components/Nav"
-import Hero from "./pages/Hero"
+import About from "./sections/About"
+import Hero from "./sections/Hero"
 
 const App = () => {
 
 	return <div>
 		<Nav />
 		<Hero />
-		lololol
+		<About />
+		<Footer />
 	</div>
 }
 

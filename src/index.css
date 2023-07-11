@@ -1,15 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Tenor+Sans&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-	body {
-		font-family: Josefin Sans, system-ui, sans-serif;
-	}
+.btn-primary {
+	@apply text-innerText capitalize text-[17px] font-normal py-[16px] px-[40px] leading-4 bg-primary rounded-tr-3xl rounded-b-3xl hover:bg-primaryAccent transition duration-150 ease-in-out shadow-md justify-center cursor-pointer;
 }
 
-.btn-primary {
-	@apply text-white py-3 px-10 bg-primary rounded-tr-2xl rounded-b-2xl hover:scale-105 transition duration-150 ease-in-out shadow-md justify-center cursor-pointer;
+.btn-secondary {
+	@apply text-secondary capitalize text-[17px] font-normal py-[13px] px-[35px] leading-4 bg-transparent border-[1px] border-secondary rounded-tr-3xl rounded-b-3xl hover:bg-secondary hover:text-white transition duration-150 ease-in-out shadow-md justify-center cursor-pointer;
+}
+
+@layer base {
+	body {
+		@apply font-secondary text-lg leading-8;
+	}
+	h1 {
+		@apply font-primary text-5xl mb-6 tracking-[10%] leading-[1.2em] text-secondary;
+	}
+	h2 {
+		@apply font-primary text-xl mb-4 text-primary;
+	}
+	p {
+		@apply font-secondary text-secondary;
+	}
 }

@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import { AiFillPlayCircle } from 'react-icons/ai'
 import { IoIosArrowDown } from 'react-icons/io'
 import { Link } from 'react-scroll'
 import LandingVideo from '../components/LandingVideo'
@@ -43,10 +42,10 @@ const Hero = () => {
                 <motion.div
                     variants={animationVariants}
                     animate={videoOpened ? "openedVideoAnimation" : "firstLoadAnimation"}
-                    className="flex flex-col text-7xl md:text-9xl font-yeseva jus items-center z-30"
+                    className="flex flex-col text-7xl md:text-9xl font-primary jus items-center z-30"
                 >
                     <span className={videoOpened ? "text-primary" : "text-white"}>yoga</span>
-                    <span className="text-background">con Elena</span>
+                    <span className={videoOpened ? "text-primary" : "text-background"}>con Elena</span>
                 </motion.div>
                 <motion.span
                     variants={{
@@ -57,7 +56,7 @@ const Hero = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                     transition={{ duration: 2, delay: 1.5 }}
-                    className="relative top-4 pt-10 text-white text-lg sm:text-xl md:text-2xl font-josefin text-center"
+                    className="relative top-4 pt-10 text-white text-lg sm:text-xl md:text-2xl text-center"
                 >
                     Empodera tu mente, fortalece tu cuerpo y eleva tu espíritu a través del yoga.
                 </motion.span>
@@ -66,10 +65,9 @@ const Hero = () => {
                         className="btn-primary flex flex-row items-center gap-2"
                         onClick={toggleVideoOpened}
                     >
-                        <AiFillPlayCircle className="text-3xl" />
                         Reproduce el vídeo
                     </button>
-                    <Link to="home" className="text-white text-2xl bg-primary p-3 rounded-full shadow-md cursor-pointer transition ease-in-out hover:translate-y-0.5">
+                    <Link to="about" className="text-white text-2xl bg-primary p-3 rounded-full shadow-md cursor-pointer transition ease-in-out hover:bg-primaryAccent hover:translate-y-0.5">
                         <IoIosArrowDown />
                     </Link>
                 </div>
