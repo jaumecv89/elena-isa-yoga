@@ -28,24 +28,28 @@ const Hero = () => {
 
     useEffect(() => {
         videoOpened
-            ? [document.body.style.overflow = "hidden", window.scrollTo(0, 0)]
+            ? [document.body.style.overflow = "hidden", window.scrollTo({ top: 0, left: 0, behavior: "smooth" })]
             : document.body.style.overflow = "unset"
     }, [videoOpened])
 
     return <section id="home" className="w-full h-screen select-none">
         {videoOpened
             ? <VideoPopup setVideoOpened={setVideoOpened} />
-            : <div className="absolute w-full h-full top-0 left-0 bg-black/40" />}
+            : <div className="absolute w-full h-full top-0 left-0 bg-black/40" />
+        }
         <LandingVideo videoOpened={videoOpened} />
         <div className="flex flex-col items-center">
             <div className="flex flex-col absolute px-[15px] w-full h-full top-0 justify-center items-center text-center overflow-hidden">
                 <motion.div
                     variants={animationVariants}
                     animate={videoOpened ? "openedVideoAnimation" : "firstLoadAnimation"}
-                    className="flex flex-col text-7xl md:text-9xl font-primary jus items-center z-30"
+                    className="flex flex-col font-primary text-5xl tablet:text-6xl desktop:text-7xl items-center z-30"
                 >
-                    <span className={videoOpened ? "text-primary" : "text-white"}>yoga</span>
-                    <span className={videoOpened ? "text-primary" : "text-background"}>con Elena</span>
+                    <h1>
+                        <span className={videoOpened ? "text-primary" : "text-white"}>yoga</span>
+                        <br />
+                        <span className={videoOpened ? "text-primary" : "text-alternative"}>con Elena</span>
+                    </h1>
                 </motion.div>
                 <motion.span
                     variants={{
@@ -56,7 +60,7 @@ const Hero = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                     transition={{ duration: 2, delay: 1.5 }}
-                    className="relative top-4 pt-10 text-white text-lg sm:text-xl md:text-2xl text-center"
+                    className="relative top-4 pt-10 text-white text-center text-lg desktop:text-xl"
                 >
                     Empodera tu mente, fortalece tu cuerpo y eleva tu espíritu a través del yoga.
                 </motion.span>
@@ -67,7 +71,10 @@ const Hero = () => {
                     >
                         Reproduce el vídeo
                     </button>
-                    <Link to="about" className="text-white text-2xl bg-primary p-3 rounded-full shadow-md cursor-pointer transition ease-in-out hover:bg-primaryAccent hover:translate-y-0.5">
+                    <Link
+                        to="about"
+                        smooth={true}
+                        className="text-white text-xl bg-primary p-3 rounded-full shadow-lg cursor-pointer transition ease-in-out hover:bg-accent hover:translate-y-0.5">
                         <IoIosArrowDown />
                     </Link>
                 </div>

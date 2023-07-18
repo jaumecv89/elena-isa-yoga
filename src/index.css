@@ -5,24 +5,24 @@
 @tailwind utilities;
 
 .btn-primary {
-	@apply text-innerText capitalize text-[17px] font-normal py-[16px] px-[40px] leading-4 bg-primary rounded-tr-3xl rounded-b-3xl hover:bg-primaryAccent transition duration-150 ease-in-out shadow-md justify-center cursor-pointer;
+	@apply text-paragraph capitalize text-[17px] font-normal py-[16px] px-[40px] leading-4 bg-primary rounded-tr-3xl rounded-b-3xl hover:bg-accent transition duration-150 ease-in-out shadow-lg justify-center cursor-pointer;
 }
 
-.btn-secondary {
-	@apply text-secondary capitalize text-[17px] font-normal py-[13px] px-[35px] leading-4 bg-transparent border-[1px] border-secondary rounded-tr-3xl rounded-b-3xl hover:bg-secondary hover:text-white transition duration-150 ease-in-out shadow-md justify-center cursor-pointer;
+.heading-title {
+	@apply text-primary text-md tablet:text-lg desktop:text-[20px] leading-none mb-5;
 }
 
 @layer base {
 	body {
-		@apply font-secondary text-lg leading-8;
+		@apply font-secondary text-md;
 	}
 	h1 {
-		@apply font-primary text-5xl mb-6 tracking-[10%] leading-[1.2em] text-secondary;
+		@apply text-secondary font-primary text-5xl tablet:text-6xl desktop:text-7xl leading-[1.1em];
 	}
 	h2 {
-		@apply font-primary text-xl mb-4 text-primary;
+		@apply text-secondary font-primary text-2xl tablet:text-[34px] desktop:text-[50px] leading-[1.2em] mb-5;
 	}
 	p {
-		@apply font-secondary text-secondary;
+		@apply text-text font-secondary text-md desktop:text-lg leading-[1.4em] desktop:leading-[1.5em] mb-5;
 	}
 }
