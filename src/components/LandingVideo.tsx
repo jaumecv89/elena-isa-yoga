@@ -1,4 +1,4 @@
-import video from '../assets/landing_video.mp4'
+import video from '../assets/landing-video.mp4'
 
 type Props = {
     videoOpened: boolean
