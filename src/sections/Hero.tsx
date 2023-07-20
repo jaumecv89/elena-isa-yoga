@@ -4,6 +4,7 @@ import { IoIosArrowDown } from 'react-icons/io'
 import { Link } from 'react-scroll'
 import LandingVideo from '../components/LandingVideo'
 import VideoPopup from '../components/VideoPopup'
+import { HeroText } from "../utils/Texts"
 
 const animationVariants = {
     firstLoadAnimation: {
@@ -45,10 +46,9 @@ const Hero = () => {
                     animate={videoOpened ? "openedVideoAnimation" : "firstLoadAnimation"}
                     className="flex flex-col font-primary text-5xl tablet:text-6xl desktop:text-7xl items-center z-30"
                 >
-                    <h1>
-                        <span className={videoOpened ? "text-primary" : "text-white"}>yoga</span>
-                        <br />
-                        <span className={videoOpened ? "text-primary" : "text-alternative"}>con Elena</span>
+                    <h1 className="flex flex-col">
+                        <span className={videoOpened ? "text-primary" : "text-white"}>{HeroText.title[0]}</span>
+                        <span className={videoOpened ? "text-primary" : "text-alternative"}>{HeroText.title[1]}</span>
                     </h1>
                 </motion.div>
                 <motion.span
@@ -62,14 +62,14 @@ const Hero = () => {
                     transition={{ duration: 2, delay: 1.5 }}
                     className="relative top-4 pt-10 text-white text-center text-lg desktop:text-xl"
                 >
-                    Empodera tu mente, fortalece tu cuerpo y eleva tu espíritu a través del yoga.
+                    {HeroText.paragraph}
                 </motion.span>
                 <div className="flex flex-col relative top-24 items-center gap-10">
                     <button
                         className="btn-primary flex flex-row items-center gap-2"
                         onClick={toggleVideoOpened}
                     >
-                        Reproduce el vídeo
+                        {HeroText.button}
                     </button>
                     <Link
                         to="about"

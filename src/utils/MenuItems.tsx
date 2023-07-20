@@ -1,6 +1,6 @@
 const MenuItems = [
     {
-        title: "Acerca de mí",
+        title: "Sobre mí",
         path: "about",
         key: "menu-about"
     },
@@ -8,6 +8,11 @@ const MenuItems = [
         title: "Clases",
         path: "classes",
         key: "menu-classes"
+    },
+    {
+        title: "Eventos",
+        path: "events",
+        key: "menu-events"
     },
     {
         title: "Contacto",

@@ -19,6 +19,8 @@ export default {
 			primary: "#C47A5E",
 			secondary: "#513125",
 			alternative: "#edc8a6",
+			smooth: "#F6E4D8",
+			smoother: "#f2d5c2",
 			paragraph: "#FEFAF6",
 			accent: "#AD6C53",
 			text: "#807673",

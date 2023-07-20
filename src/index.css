@@ -12,9 +12,17 @@
 	@apply text-primary text-md tablet:text-lg desktop:text-[20px] leading-none mb-5;
 }
 
+.icons-container {
+	@apply flex flex-row gap-4 items-center;
+}
+
+.contact-icon {
+	@apply h-fit text-xl p-4 rounded-full bg-smooth text-primary;
+}
+
 @layer base {
 	body {
-		@apply font-secondary text-md;
+		@apply font-secondary text-md bg-background;
 	}
 	h1 {
 		@apply text-secondary font-primary text-5xl tablet:text-6xl desktop:text-7xl leading-[1.1em];
@@ -24,5 +32,9 @@
 	}
 	p {
 		@apply text-text font-secondary text-md desktop:text-lg leading-[1.4em] desktop:leading-[1.5em] mb-5;
+	}
+	input,
+	textarea {
+		@apply min-h-[47px] border border-smoother focus:border-primary outline-none rounded-r-lg rounded-bl-lg py-[6px] px-4 bg-background transition;
 	}
 }
