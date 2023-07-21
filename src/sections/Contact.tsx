@@ -1,6 +1,7 @@
 import { FaPhone } from "react-icons/fa"
 import { TbMailFilled } from "react-icons/tb"
 import wave from "../assets/wave-footer.svg"
+import ContactForm from "../components/ContactForm"
 import SocialMedia from "../utils/SocialMedia"
 import { ContactText } from "../utils/Texts"
 
@@ -16,14 +17,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className="flex flex-col tablet:flex-row tablet:gap-[5%] desktop:gap-[10%]">
-                <form action="" className="flex flex-col w-full gap-4 mb-16 tablet:mb-0">
-                    <div className="flex flex-col tablet:flex-row gap-4">
-                        <input type="text" className="w-full" placeholder={ContactText.name} required />
-                        <input type="email" className="w-full" placeholder={ContactText.email} required />
-                    </div>
-                    <textarea rows={8} placeholder={ContactText.message} required />
-                    <button type="submit" className="btn-primary tablet:w-fit">{ContactText.send}</button>
-                </form>
+                <ContactForm />
                 <div className="flex flex-col mx-[10%] tablet:mx-0 tablet:mr-12 desktop:mr-16 gap-10">
                     <div className="icons-container">
                         <div className="contact-icon">
@@ -54,7 +48,7 @@ const Contact = () => {
                             </div>
                         </div>
                     ))}
-                </div>
+                    </div>
             </div>
         </div>
         <img src={wave} alt="Wave transition" className="relative bottom-[-1px]" />

@@ -24,6 +24,8 @@ export default {
 			paragraph: "#FEFAF6",
 			accent: "#AD6C53",
 			text: "#807673",
+			green: "#428959",
+			red: "#C73E1D",
 		},
 		boxShadow: {
 			sm: "0px 2px 4px 0px rgba(11, 10, 55, 0.15)",
