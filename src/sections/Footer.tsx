@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="flex flex-col items-center justify-center text-center mb-5">
                 <h2 className="text-primary uppercase">{FooterText.title}</h2>
                 <p className="text-xs tablet:text-sm desktop:text-[15px] leading-6 text-gray tablet:px-[30%] mb-[14px]">
-                    Diseño y programación por <a href="https://jaumecampderros.com/" className="text-paragraph hover:text-primary transition">Jaume Campderrós</a>: creando experiencias digitales únicas.
+                    Diseño y programación por <a href={FooterText.website} className="text-paragraph hover:text-primary transition">Jaume Campderrós</a>: creando experiencias digitales únicas.
                 </p>
             </div>
             <ul className="flex justify-center text-paragraph pb-14">

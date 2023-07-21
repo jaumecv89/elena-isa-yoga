@@ -60,16 +60,23 @@ export const ContactText = {
         y retiros inspiradores. Si tienes ideas en mente o simplemente deseas compartir el amor por el yoga en todas 
         sus dimensiones, no dudes en ponerte en contacto conmigo.
     `,
-    name: "Nombre",
     email: "Email",
-    message: "Mensaje",
-    send: "Enviar",
     contact: "contacto@elenaisa.com",
     phone: "Teléfono",
     phoneContact: "+34 679 741 661"
 }
 
+export const FormText = {
+    name: "Nombre",
+    email: "Email",
+    message: "Mensaje",
+    send: "Enviar",
+    success: "Mensaje enviado correctamente",
+    error: "Ha habido un error al enviar el mensaje"
+}
+
 export const FooterText = {
     title: "Elena Isa",
-    copyright: "© 2023 Elena Isa. Todos los derechos reservados."
+    copyright: "© 2023 Elena Isa. Todos los derechos reservados.",
+    website: "https://jaumecampderros.com/"
 }
