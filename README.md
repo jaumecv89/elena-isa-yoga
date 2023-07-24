@@ -1,6 +1,6 @@
-# Elena Isa - Yoga
+# Elena Isa - Yoga teacher
 
-This is a web project for Elena Isa, a Yoga teacher. The project is developed using React, Typescript, Vite, Vitest, and Tailwind CSS. It also utilizes framer-motion, react-scroll, and react-icons.
+This is a web project for Elena Isa, a Yoga teacher. The project is developed using React, Typescript, Vite, Vitest, and Tailwind CSS. It also utilizes framer-motion, react-scroll, react-icons, emailjs and hamburger-react.
 
 ## Dependencies
 
@@ -74,6 +74,8 @@ The project utilizes the following additional features:
 -   framer-motion: Provides animation capabilities for enhanced user experience.
 -   react-scroll: Enables smooth scrolling to different sections within the website.
 -   react-icons: Includes a library of icons for easy integration into the project.
+-   emailjs: A dependency that facilitates sending emails through JavaScript.
+-   hamburger-react: Animated hamburger menu icons.
 
 ## Contributing
 

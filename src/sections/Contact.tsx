@@ -2,6 +2,7 @@ import { FaPhone } from "react-icons/fa"
 import { TbMailFilled } from "react-icons/tb"
 import wave from "../assets/wave-footer.svg"
 import ContactForm from "../components/ContactForm"
+import Image from "../components/Image"
 import SocialMedia from "../utils/SocialMedia"
 import { ContactText } from "../utils/Texts"
 
@@ -51,7 +52,13 @@ const Contact = () => {
                     </div>
             </div>
         </div>
-        <img src={wave} alt="Wave transition" className="relative bottom-[-1px]" />
+        <Image
+            src={wave}
+            fallback={wave}
+            type="image/svg"
+            alt="Wave transition"
+            className="relative bottom-[-1px]"
+        />
     </section>
 }
 
