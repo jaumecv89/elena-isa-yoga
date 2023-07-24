@@ -1,7 +1,9 @@
 import { Link } from "react-scroll"
-import image from "../assets/about-image2.jpeg"
+import jpegImage2 from "../assets/about-image-2.jpeg"
+import webpImage2 from "../assets/about-image-2.webp"
 import wave1 from "../assets/wave-1.svg"
 import wave2 from "../assets/wave-2.svg"
+import Image from "../components/Image"
 import { AboutText } from "../utils/Texts"
 
 const About = () => {
@@ -22,7 +24,12 @@ const About = () => {
                 <span className="tablet:text-lg desktop:text-xl">{AboutText.author}</span>
             </div>
         </div>
-        <img src={wave1} alt="Wave transition" />
+        <Image
+            src={wave1}
+            fallback={wave1}
+            type="image/svg"
+            alt="Wave transition"
+        />
         <div className="bg-white">
             <div className="container mx-auto py-20 tablet:pb-0 text-center">
                 <div className="flex flex-col items-center">
@@ -37,8 +44,9 @@ const About = () => {
                         {AboutText.button}
                     </Link>
                     <div className="flex flex-col tablet:w-[85%] items-center">
-                        <img
-                            src={image}
+                        <Image
+                            src={webpImage2}
+                            fallback={jpegImage2}
                             alt="Clase de yoga"
                             className="rounded-xl"
                         />
@@ -50,7 +58,12 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <img src={wave2} alt="Wave transition" />
+            <Image
+                src={wave2}
+                fallback={wave2}
+                type="image/svg"
+                alt="Wave transition"
+            />
         </div>
     </section>
 }

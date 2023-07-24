@@ -1,4 +1,5 @@
 import wave from "../assets/wave-3.svg"
+import Image from "../components/Image"
 
 const Events = () => {
 
@@ -6,7 +7,13 @@ const Events = () => {
         <div className="container mx-auto py-28 text-center">
             Eventos
         </div>
-        <img src={wave} alt="Wave transition" className="relative bottom-[-1px]" />
+        <Image
+            src={wave}
+            fallback={wave}
+            type="image/svg"
+            alt="Wave transition"
+            className="relative bottom-[-1px]"
+        />
     </section>
 }
 
