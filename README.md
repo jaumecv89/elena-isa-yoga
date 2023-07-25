@@ -12,7 +12,6 @@ This is a web project for Elena Isa, a dedicated Yoga teacher, to showcase her y
 - [Usage](#usage)
 - [Building for Production](#building-for-production)
 - [Testing](#testing)
-- [GraphQL and Apollo Client](#graphql-and-apollo-client)
 - [Contributing](#contributing)
 - [License](#license)
 
