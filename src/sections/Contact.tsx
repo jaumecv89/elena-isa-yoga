@@ -25,8 +25,12 @@ const Contact = () => {
                             <TbMailFilled />
                         </div>
                         <div className="flex flex-col w-full items-start">
-                            <span className="text-sm text-primary">{ContactText.email}</span>
-                            <a href="mailto:contacto@elenaisa.com" className="text-md font-bold text-secondary">{ContactText.contact}</a>
+                            <span className="text-sm text-primary">
+                                {ContactText.email}
+                            </span>
+                            <a href="mailto:contacto@elenaisa.com" className="text-md font-bold text-secondary hover:text-primary transition">
+                                {ContactText.contact}
+                            </a>
                         </div>
                     </div>
                     <div className="icons-container">
@@ -34,8 +38,12 @@ const Contact = () => {
                             <FaPhone />
                         </div>
                         <div className="flex flex-col w-full items-start">
-                            <span className="text-sm text-primary">{ContactText.phone}</span>
-                            <a href="tel:679741661" className="text-md font-bold text-secondary">{ContactText.phoneContact}</a>
+                            <span className="text-sm text-primary">
+                                {ContactText.phone}
+                            </span>
+                            <a href="tel:679741661" className="text-md font-bold text-secondary hover:text-primary transition">
+                                {ContactText.phoneContact}
+                            </a>
                         </div>
                     </div>
                     {SocialMedia.map((item) => (
@@ -44,12 +52,19 @@ const Contact = () => {
                                 {item.icon}
                             </div>
                             <div className="flex flex-col w-full items-start">
-                                <span className="text-sm text-primary">{item.name}</span>
-                                <a href={item.link} className="text-md font-bold text-secondary">{item.text}</a>
+                                <span className="text-sm text-primary">
+                                    {item.name}
+                                </span>
+                                <a
+                                    href={item.link}
+                                    className="text-md font-bold text-secondary hover:text-primary transition"
+                                >
+                                    {item.text}
+                                </a>
                             </div>
                         </div>
                     ))}
-                    </div>
+                </div>
             </div>
         </div>
         <Image

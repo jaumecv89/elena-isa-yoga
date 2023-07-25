@@ -54,7 +54,7 @@ export const AboutText = {
 
 export const ContactText = {
     heading: "Contáctame",
-    title: "¿Cómo puedo ayudarte?",
+    title: "¿Hablamos?",
     paragraph: `
         Estoy emocionada de conectar contigo y explorar increíbles oportunidades de colaboración 
         y retiros inspiradores. Si tienes ideas en mente o simplemente deseas compartir el amor por el yoga en todas 
@@ -79,4 +79,18 @@ export const FooterText = {
     title: "Elena Isa",
     copyright: "© 2023 Elena Isa. Todos los derechos reservados.",
     website: "https://jaumecampderros.com/"
+}
+
+export const EventsText = {
+    heading: "Calendario",
+    title: "Próximos eventos y retiros"
+}
+
+export const EventCardText = {
+    signIn: "Apúntate"
+}
+
+export const EventsListText = {
+    loading: "Cargando eventos...",
+    error: "Ha ocurrido un error al cargar los eventos."
 }
