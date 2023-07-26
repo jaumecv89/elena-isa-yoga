@@ -58,7 +58,7 @@ The project utilizes the following additional features:
 
 The website is built using the following technologies:
 
--    React
+-    ![React]([http://url/to/img.png](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg))React
 -    Typescript
 -    Vite
 -    Vitest
