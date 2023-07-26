@@ -63,6 +63,7 @@ const About = () => {
                 fallback={wave2}
                 type="image/svg"
                 alt="Wave transition"
+                className="relative bottom-[-1px]"
             />
         </div>
     </section>

@@ -1,6 +1,56 @@
 # Elena Isa - Yoga teacher
 
-This is a web project for Elena Isa, a Yoga teacher. The project is developed using React, Typescript, Vite, Vitest, and Tailwind CSS. It also utilizes framer-motion, react-scroll, react-icons, emailjs and hamburger-react.
+This is a web project for Elena Isa, a dedicated Yoga teacher, to showcase her yoga services and provide valuable resources to her students. The website is built using React, Typescript, Vite, Vitest, and Tailwind CSS, and incorporates various additional features such as animation, smooth scrolling, icons, email functionality, and an animated hamburger menu.
+
+
+## Table of Contents
+
+- [Description](#description)
+- [Features](#features)
+- [Dependencies](#dependencies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Building for Production](#building-for-production)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
+
+
+## Description
+
+Elena Isa - Yoga teacher is a serene and informative platform created for Elena Isa, a dedicated and experienced yoga teacher. The website serves as a gateway for both existing and potential yoga students, providing them with valuable resources and insights into the world of yoga. With a focus on promoting physical and mental well-being, Elena Isa offers a holistic approach to yoga, catering to practitioners of all levels.
+
+**Key Highlights:**
+
+- **Discover Yoga Sessions:** Visitors can explore a diverse range of yoga sessions, each designed to target specific aspects of health and inner balance. From Hatha and Vinyasa to Yin and Kundalini, there is something for everyone.
+
+- **Next Events and Retreats:** Stay updated on upcoming events and retreats organized by Elena Isa. The GraphQL and Apollo Client integration ensures smooth and efficient retrieval of event information, ensuring you never miss an opportunity to immerse yourself in transformative experiences.
+
+- **Seamless User Experience:** Focused on delivering a seamless user experience, the website incorporates Framer Motion to animate elements, React Scroll for effortless navigation, and React Icons for intuitive visual cues. Developed using a mobile-first approach, the website guarantees optimal performance and aesthetics across various devices.
+
+- **Engage with Elena Isa:** With the help of EmailJS, communicating with Elena Isa has never been easier. Whether it's inquiries about classes or general information, the platform ensures a reliable means of communication.
+
+- **Responsive Design:** The website is thoughtfully crafted to adapt seamlessly to various devices, ensuring an optimal user experience on both desktops and mobile devices.
+
+Step onto the path of self-discovery and well-being with Elena Isa - Yoga Teacher Website. Embrace the transformative power of yoga and embark on a journey towards inner harmony and tranquility. Whether you are a seasoned practitioner or new to yoga, this platform invites you to explore the profound benefits of this ancient practice under the guidance of a passionate and skilled teacher.
+
+
+## Features
+
+The project utilizes the following additional features:
+
+- **Framer Motion:** Provides seamless animation capabilities for enhanced user experience, making the website feel alive and engaging.
+
+- **React Scroll:** Enables smooth scrolling to different sections within the website, allowing users to navigate effortlessly.
+
+- **React Icons:** Includes a library of icons for easy integration into the project, providing visual cues and aesthetics.
+
+- **EmailJS:** Facilitates sending emails through JavaScript, ensuring a reliable means of communication between Elena Isa and her students.
+
+- **Hamburger React:** Animated hamburger menu icons for intuitive navigation on mobile and smaller screens.
+
+- **GraphQL and Apollo Client:** Utilized to fetch and manage data for upcoming events and retreats. GraphQL serves as a powerful query language for APIs, allowing the website to efficiently retrieve specific data from the server. Apollo Client complements GraphQL by effectively managing the fetched data and seamlessly integrating it into the components. With GraphQL and Apollo Client, Elena Isa's website delivers a smoother and more performant user experience when browsing through the next events and retreats sections.
+
 
 ## Dependencies
 
@@ -8,6 +58,7 @@ Make sure you have the following dependencies installed before setting up the pr
 
 -   Node.js (version >= 14)
 -   npm (version >= 6) or yarn (version >= 1.22)
+
 
 ## Installation
 
@@ -33,6 +84,7 @@ Follow the steps below to set up the project locally:
     yarn install
     ```
 
+
 ## Usage
 
 To start the development server and run the project locally, use the following command:
@@ -44,6 +96,7 @@ yarn dev
 ```
 
 This will start the development server and open the project in your default browser. Any changes you make to the source code will be automatically reloaded.
+
 
 ## Building for Production
 
@@ -57,6 +110,7 @@ yarn build
 
 This will create an optimized production build in the dist directory.
 
+
 ## Testing
 
 To run the tests, use the following command:
@@ -67,15 +121,6 @@ npm run test
 yarn test
 ```
 
-## Additional Features
-
-The project utilizes the following additional features:
-
--   framer-motion: Provides animation capabilities for enhanced user experience.
--   react-scroll: Enables smooth scrolling to different sections within the website.
--   react-icons: Includes a library of icons for easy integration into the project.
--   emailjs: A dependency that facilitates sending emails through JavaScript.
--   hamburger-react: Animated hamburger menu icons.
 
 ## Contributing
 
@@ -86,6 +131,7 @@ If you'd like to contribute to this project, please follow these steps:
 3. Make your changes and commit them.
 4. Push your changes to your fork.
 5. Submit a pull request to the main branch of the original repository.
+
 
 ## License
 

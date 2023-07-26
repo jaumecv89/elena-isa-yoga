@@ -12,10 +12,11 @@ const Footer = () => {
                     {FooterText.title}
                 </h2>
                 <p className="text-xs tablet:text-sm desktop:text-[15px] leading-6 text-gray tablet:px-[30%] mb-[14px]">
-                    Diseño y programación por <a href={FooterText.website} className="text-paragraph hover:text-primary transition">Jaume Campderrós</a>: creando experiencias digitales únicas.
+                    Diseño y programación por <a href={FooterText.website} className="text-paragraph hover:text-primary transition">Jaume Campderrós</a>.
+                    <br/> Creando experiencias digitales únicas.
                 </p>
             </div>
-            <ul className="flex justify-center text-paragraph pb-14">
+            <ul className="flex justify-center text-sm tablet:text-md text-paragraph pb-14">
                 {MenuItems.map((item) => (
                     <li className="flex px-5 py-[13px] text-center items-center" key={item.key}>
                         <Link
