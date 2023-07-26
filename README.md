@@ -58,7 +58,7 @@ The project utilizes the following additional features:
 
 The website is built using the following technologies:
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" height="64" alt="React"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="64" alt="Typescript"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" height="64" alt="Tailwind CSS"/> <img src="https://vitejs.dev/logo-with-shadow.png" height="64" alt="Vite"/> <img src="https://vitest.dev/logo-shadow.svg" height="64" alt="Vitest"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="64" alt="React"/>    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="64" alt="Typescript"/>    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" height="64" alt="Tailwind CSS"/>    <img src="https://vitejs.dev/logo-with-shadow.png" height="64" alt="Vite"/>    <img src="https://vitest.dev/logo-shadow.svg" height="64" alt="Vitest"/>
 
 
 ## Dependencies
