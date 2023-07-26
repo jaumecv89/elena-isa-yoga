@@ -58,11 +58,9 @@ The project utilizes the following additional features:
 
 The website is built using the following technologies:
 
--    <a href="https://react.dev/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="32"> React</a>
--    <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="32"> Typescript</a>
--    <a href="https://tailwindcss.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" height="32"> Tailwind CSS</a>
--    <a href="https://vitejs.dev/" target="_blank"><img src="https://vitejs.dev/logo-with-shadow.png" height="32"> Vite</a>
--    <a href="https://vitest.dev/" target="_blank"><img src="https://vitest.dev/logo-shadow.svg" height="32"> Vitest</a>
+| <a href="https://react.dev/" target="_blank" style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="32"></a> | <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="32"></a> | <a href="https://tailwindcss.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" height="32"></a> | <a href="https://vitejs.dev/" target="_blank"><img src="https://vitejs.dev/logo-with-shadow.png" height="32"></a> | <a href="https://vitest.dev/" target="_blank"><img src="https://vitest.dev/logo-shadow.svg" height="32"></a> |
+| :----: | :----: | :----: | :----: | :----: |
+| React | Typescript | Tailwind CSS | Vite | Vitest |
 
 
 ## Dependencies
