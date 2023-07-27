@@ -1,15 +1,17 @@
 # Elena Isa - Yoga teacher
 
-This is a web project for Elena Isa, a dedicated Yoga teacher, to showcase her yoga services and provide valuable resources to her students. The website is built using React, Typescript, Vite, Vitest, and Tailwind CSS, and incorporates various additional features such as animation, smooth scrolling, icons, email functionality, and an animated hamburger menu.
+Welcome to the Elena Isa - Yoga Teacher Website repository! This project is dedicated to showcasing Elena Isa's yoga services and providing valuable resources to her students. The website is built using React, Typescript, Vite, Vitest, and Tailwind CSS, and incorporates various additional features such as animation, smooth scrolling, icons, email functionality, and an animated hamburger menu.
 
 
 ## Table of Contents
 
 - [Description](#description)
 - [Features](#features)
+- [Technologies](#technologies)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Next Events and Retreats](#next-events-and-retreats)
 - [Building for Production](#building-for-production)
 - [Testing](#testing)
 - [Contributing](#contributing)
@@ -18,7 +20,7 @@ This is a web project for Elena Isa, a dedicated Yoga teacher, to showcase her y
 
 ## Description
 
-Elena Isa - Yoga teacher is a serene and informative platform created for Elena Isa, a dedicated and experienced yoga teacher. The website serves as a gateway for both existing and potential yoga students, providing them with valuable resources and insights into the world of yoga. With a focus on promoting physical and mental well-being, Elena Isa offers a holistic approach to yoga, catering to practitioners of all levels.
+Elena Isa is an experienced and dedicated yoga teacher who believes in promoting physical and mental well-being through the transformative power of yoga. This serene and informative platform offers a gateway for both existing and potential yoga students, providing them with valuable resources and insights into the world of yoga. With a focus on offering a holistic approach to yoga, Elena Isa caters to practitioners of all levels.
 
 **Key Highlights:**
 
@@ -50,6 +52,15 @@ The project utilizes the following additional features:
 - **Hamburger React:** Animated hamburger menu icons for intuitive navigation on mobile and smaller screens.
 
 - **GraphQL and Apollo Client:** Utilized to fetch and manage data for upcoming events and retreats. GraphQL serves as a powerful query language for APIs, allowing the website to efficiently retrieve specific data from the server. Apollo Client complements GraphQL by effectively managing the fetched data and seamlessly integrating it into the components. With GraphQL and Apollo Client, Elena Isa's website delivers a smoother and more performant user experience when browsing through the next events and retreats sections.
+
+
+## Technologies
+
+The website is built using the following technologies:
+
+| <a href="https://react.dev/" target="_blank" style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="32"></a> | <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="32"></a> | <a href="https://tailwindcss.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" height="32"></a> | <a href="https://vitejs.dev/" target="_blank"><img src="https://vitejs.dev/logo-with-shadow.png" height="32"></a> | <a href="https://vitest.dev/" target="_blank"><img src="https://vitest.dev/logo-shadow.svg" height="32"></a> |
+| :----: | :----: | :----: | :----: | :----: |
+| React | Typescript | Tailwind CSS | Vite | Vitest |
 
 
 ## Dependencies
@@ -96,6 +107,13 @@ yarn dev
 ```
 
 This will start the development server and open the project in your default browser. Any changes you make to the source code will be automatically reloaded.
+
+
+## Next Events and Retreats
+
+Elena Isa's website utilizes GraphQL and Apollo Client to fetch and manage data for upcoming events and retreats. This integration ensures a smoother and more performant user experience when browsing through the next events and retreats sections.
+
+To manage the content for the next events and retreats, the website uses Hygraph as a CMS (Content Management System). Hygraph allows Elena Isa to easily update event information and have it reflected on the website seamlessly.
 
 
 ## Building for Production
