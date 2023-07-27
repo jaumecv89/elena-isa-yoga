@@ -94,3 +94,36 @@ export const EventsListText = {
     loading: "Cargando eventos...",
     error: "Ha ocurrido un error al cargar los eventos."
 }
+
+export const ClasesText = {
+    heading: "Explora y aprende",
+    title: "Clases de Yoga",
+    paragraph: `
+        Me complace enormemente compartir este espacio de autodescubrimiento y bienestar con todos ustedes. 
+        Aquí, en mis clases, podrán embarcarse en un apasionante viaje a través de diferentes estilos de yoga, 
+        cada uno con su propia esencia y beneficios únicos. Permítanme guiarles a través de este camino de 
+        transformación, donde aprenderemos juntos a nutrir cuerpo, mente y alma. En mis clases, podrán experimentar 
+        una amplia variedad de enfoques de yoga, y les presento algunos de ellos:
+    `,
+    colaboration: "¿Colaboramos?",
+    colaborationParagraph: "Descubre nuevas posibilidades con un exclusivo taller personalizado. Crea un evento o retiro único para tu empresa.",
+    contact: "Contacta conmigo",
+    colaborators: "Colaboradores",
+    class1Title: "Hatha Yoga",
+    class1Text: `
+        El pilar de todas las prácticas, el Hatha Yoga se enfoca en las posturas físicas y las técnicas de respiración 
+        para mejorar la alineación, flexibilidad y equilibrio. Aquí descubrirán cómo conectar profundamente con su ser interior 
+        a través de una práctica suave pero desafiante.
+    `,
+    class2Title: "Vinyasa Flow",
+    class2Text: `
+        Fluyamos juntos con gracia y sincronicemos nuestra respiración con el movimiento en nuestras clases de Vinyasa Flow. 
+        Esta forma dinámica de yoga nos invita a realizar una secuencia fluida de posturas que aumentarán nuestra fuerza, coordinación 
+        y nos conectarán con una sensación de fluidez en cada movimiento.
+    `,
+    class3Title: "Ashtanga Yoga",
+    class3Text: `
+        Para aquellas personas que buscan un desafío físico y mental, las clases de Ashtanga Yoga nos llevarán a través de una 
+        secuencia rigurosa y estructurada de posturas. Con el enfoque en la respiración ujjayi y la práctica constante, lograremos una mayor fuerza y resistencia.
+    `
+}
