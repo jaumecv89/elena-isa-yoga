@@ -16,7 +16,7 @@ const VideoPopup = ({ setVideoOpened }: Props) => {
     return <div>
         <div
             onClick={() => setVideoOpened(false)}
-            className="absolute right-0 text-white text-2xl m-5 rounded-full bg-black/60 shadow-2xl p-2 cursor-pointer transition hover:scale-110 z-50"
+            className="absolute right-0 text-white text-2xl m-5 rounded-full bg-black/60 shadow-2xl p-2 cursor-pointer transition hover:scale-110 z-[60]"
         >
             <AiOutlineClose/>
         </div>
@@ -25,7 +25,7 @@ const VideoPopup = ({ setVideoOpened }: Props) => {
             initial="hidden"
             animate="visible"
             transition={{ ease: [0.22, 0.50, 0.08, 1], duration: 2.5 }}
-            className="absolute w-full h-full bg-white z-30"
+            className="absolute w-full h-full bg-white z-50"
         />
     </div>
     

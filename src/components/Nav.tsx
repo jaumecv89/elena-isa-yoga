@@ -24,7 +24,7 @@ const Nav = () => {
     }, [isOpen])
 
     return <nav className="flex w-full h-full tablet:h-auto absolute justify-center text-white select-none">
-        <div className="flex container justify-between items-center py-8 absolute z-50">
+        <div className={`flex container justify-between items-center py-8 absolute z-30`}>
             <span className="font-primary text-2xl uppercase">
                 {NavText.title}
             </span>
@@ -46,13 +46,30 @@ const Nav = () => {
                         </Link>
                     </li>
                 ))}
+                <div className="flex flex-row ml-10 border-l-[1px] border-white/10">
+                    {SocialMedia.map((item) => (
+                        <div
+                            className="flex pl-10 items-center"
+                            key={item.key}
+                        >
+                            <Link
+                                to={item.link}
+                                smooth={true}
+                                className="cursor-pointer hover:text-primary transition"
+                            >
+                                {item.icon}
+                            </Link>
+                        </div>
+                    ))}
+                </div>
+
             </ul>
         </div>
         <AnimatePresence>
             {isOpen &&
                 <motion.div
                     {...animation}
-                    className="flex w-full h-full absolute top-0 items-center justify-center bg-secondary/90 backdrop-blur-md z-40"
+                    className="flex w-full h-full absolute top-0 items-center justify-center bg-secondary/90 backdrop-blur-md z-20"
                 >
                     <ul className="flex flex-col items-center gap-12">
                         {MenuItems.map((item) => (

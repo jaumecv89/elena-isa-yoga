@@ -16,7 +16,7 @@ const Events = () => {
             </div>
             <EventsList />
             <div
-                className="hidden tablet:block absolute bottom-0 right-0 tablet:w-[30%] h-[900px] bg-cover bg-no-repeat z-0"
+                className="hidden tablet:block absolute bottom-0 right-[0] tablet:w-[30%] h-[80%] bg-cover bg-no-repeat z-0"
                 style={{ backgroundImage: `url(${image})` }}
             />
         </div>

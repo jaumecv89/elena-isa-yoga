@@ -49,7 +49,8 @@ export const AboutText = {
     ],
     quote: `"El verdadero yoga no es sobre la forma del cuerpo, sino sobre la forma de tu vida".`,
     author: "- Aadil Palkhivala",
-    button: "Descubre mis clases"
+    button: "Descubre mis clases",
+    button2: "Próximos eventos"
 }
 
 export const ContactText = {
@@ -93,4 +94,36 @@ export const EventCardText = {
 export const EventsListText = {
     loading: "Cargando eventos...",
     error: "Ha ocurrido un error al cargar los eventos."
+}
+
+export const ClasesText = {
+    heading: "Explora y aprende",
+    title: "Clases de Yoga",
+    paragraph: `
+        Me complace enormemente compartir este espacio de autodescubrimiento y bienestar. 
+        Aquí, en mis clases, podréis embarcaros en un apasionante viaje a través de diferentes estilos de yoga, 
+        cada uno con su propia esencia y beneficios únicos. Permitirme guiaros a través de este camino de 
+        transformación, donde aprenderemos juntos a nutrir cuerpo, mente y alma. En mis clases, podréis experimentar 
+        una amplia variedad de enfoques de yoga, aquí os presento algunos de ellos.
+    `,
+    colaboration: "¿Colaboramos?",
+    colaborationParagraph: "Descubre nuevas posibilidades con un exclusivo taller personalizado. Crea un evento o retiro único para tu empresa.",
+    contact: "Contacta conmigo",
+    colaborators: "Colaboradores",
+    class1Title: "Ashtanga Yoga",
+    class1Text: `
+        Para aquellas personas que buscan un desafío físico y mental, las clases de Ashtanga Yoga nos llevarán a través de una 
+        secuencia rigurosa y estructurada de posturas. Con el enfoque en la respiración ujjayi y la práctica constante, lograremos una mayor fuerza y resistencia.
+    `,
+    class2Title: "Rocket Yoga",
+    class2Text: `
+        Una variante energizante del Ashtanga, que combina la disciplina del yoga tradicional con una dosis extra de diversión y creatividad. 
+        A través de secuencias desafiantes, te invito a superar tus límites y a descubrir tu fuerza interior de una manera dinámica y estimulante.
+    `,
+    class3Title: "Vinyasa Flow",
+    class3Text: `
+        Fluyamos juntos con gracia y sincronicemos nuestra respiración con el movimiento en las clases de Vinyasa Flow. 
+        Esta forma dinámica de yoga nos invita a realizar una secuencia fluida de posturas que aumentarán nuestra fuerza, coordinación 
+        y nos conectarán con una sensación de fluidez en cada movimiento.
+    `
 }

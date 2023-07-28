@@ -63,9 +63,9 @@ const EventCard: React.FC<Props> = ({ event }) => {
             {detailsOpen &&
                 <div className="flex flex-col">
                     <div className="flex flex-col px-6 pb-6 gap-6">
-                        <span className="text-left">
+                        <p className="text-left m-0">
                             {event.description}
-                        </span>
+                        </p>
                     </div>
                     <div className="flex flex-row items-center">
                         {event.price &&

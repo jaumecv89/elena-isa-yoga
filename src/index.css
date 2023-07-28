@@ -5,7 +5,11 @@
 @tailwind utilities;
 
 .btn-primary {
-	@apply text-paragraph capitalize text-[17px] font-normal py-[16px] px-[40px] leading-4 bg-primary rounded-tr-3xl rounded-b-3xl hover:bg-accent transition duration-150 ease-in-out shadow-lg justify-center cursor-pointer;
+	@apply text-paragraph capitalize text-[17px] py-[16px] px-[40px] leading-4 bg-primary rounded-tr-3xl rounded-b-3xl hover:bg-accent transition duration-150 ease-in-out shadow-lg justify-center cursor-pointer
+}
+
+.btn-secondary {
+	@apply text-primary capitalize text-[17px] py-[16px] px-[40px] leading-4 rounded rounded-tr-3xl rounded-b-3xl justify-center cursor-pointer transition duration-150 border-2 border-primary hover:bg-primary hover:text-white
 }
 
 .heading-title {

@@ -36,13 +36,22 @@ const About = () => {
                     <span className="heading-title">{AboutText.heading[1]}</span>
                     <h2 className="pb-5">{AboutText.title[1]}</h2>
                     <p className="tablet:w-[60%] mb-10">{AboutText.paragraph[2]}</p>
-                    <Link
-                        to="classes"
-                        smooth="true"
-                        className="btn-primary mb-20"
-                    >
-                        {AboutText.button}
-                    </Link>
+                    <div className="flex flex-col tablet:flex-row gap-5 mb-20">
+                        <Link
+                            to="classes"
+                            smooth="true"
+                            className="btn-primary"
+                        >
+                            {AboutText.button}
+                        </Link>
+                        <Link
+                            to="events"
+                            smooth="true"
+                            className="btn-secondary"
+                        >
+                            {AboutText.button2}
+                        </Link>
+                    </div>
                     <div className="flex flex-col tablet:w-[85%] items-center">
                         <Image
                             src={webpImage2}
