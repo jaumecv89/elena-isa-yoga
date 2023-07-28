@@ -24,7 +24,7 @@ const Nav = () => {
     }, [isOpen])
 
     return <nav className="flex w-full h-full tablet:h-auto absolute justify-center text-white select-none">
-        <div className="flex container justify-between items-center py-8 absolute z-20">
+        <div className={`flex container justify-between items-center py-8 absolute z-30`}>
             <span className="font-primary text-2xl uppercase">
                 {NavText.title}
             </span>
@@ -69,7 +69,7 @@ const Nav = () => {
             {isOpen &&
                 <motion.div
                     {...animation}
-                    className="flex w-full h-full absolute top-0 items-center justify-center bg-secondary/90 backdrop-blur-md z-40"
+                    className="flex w-full h-full absolute top-0 items-center justify-center bg-secondary/90 backdrop-blur-md z-20"
                 >
                     <ul className="flex flex-col items-center gap-12">
                         {MenuItems.map((item) => (
