@@ -4,6 +4,7 @@ import image4 from "../assets/classes-image-4.webp"
 import wave from "../assets/wave-4.svg"
 import Collaborate from "../components/Collaborate"
 import Image from "../components/Image"
+import TestimonialsList from "../components/TestimonialsList"
 import { ClasesText } from "../utils/Texts"
 
 const Classes = () => {
@@ -18,7 +19,7 @@ const Classes = () => {
             <div className="flex flex-col gap-14 items-center">
                 <div className="flex flex-col tablet:flex-row w-full relative items-center justify-center">
                     <div
-                        className="w-full tablet:w-[40%] h-[50vh] desktop:h-[60vh] mb-10 tablet:mb-0 bg-cover bg-center bg-no-repeat rounded-lg relative tablet:right-[-5%]"
+                        className="w-full tablet:w-[40%] h-[50vh] desktop:h-[60vh] mb-10 tablet:mb-0 bg-cover bg-no-repeat rounded-lg relative tablet:right-[-5%]"
                         style={{ backgroundImage: `url(${image4})` }}
                     />
                     <div className="flex flex-col tablet:w-[40%] desktop:w-[30%] tablet:text-left bg-background tablet:p-10 tablet:left-[-5%] relative">
@@ -54,7 +55,10 @@ const Classes = () => {
         </div>
         <Collaborate />
         <div className="container mx-auto py-28 text-center">
-            Clases
+            <div className="flex flex-col items-center mb-12">
+                <h2 className="pb-5">{ClasesText.testimonials}</h2>
+            </div>
+            <TestimonialsList />
         </div>
         <Image
             src={wave}

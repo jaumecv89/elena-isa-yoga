@@ -39,13 +39,13 @@ const Hero = () => {
     return <section id="home" className="w-full h-screen select-none">
         {videoOpened
             ? <VideoPopup setVideoOpened={setVideoOpened} />
-            : <div className="absolute w-full h-full top-0 left-0 bg-black/40" />
+            : <div className="absolute w-full h-screen top-0 left-0 bg-black/40" />
         }
         <Video
             src={video}
             fallbackVideo={fallbackVideo}
             fallbackImage={fallbackVideoImage}
-            className={`${videoOpened && "absolute z-30 "}w-full h-full object-cover`}
+            className={`${videoOpened && "absolute z-30 "}w-full h-screen object-cover`}
         />
         <div className="flex flex-col items-center">
             <div className="flex flex-col absolute px-[15px] w-full h-full top-0 justify-center items-center text-center overflow-hidden">

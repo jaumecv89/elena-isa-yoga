@@ -12,3 +12,13 @@ export const GET_EVENTS_QUERY = gql`
         }
     }
 `
+
+export const GET_TESTIMONIALS_QUERY = gql`
+    {
+        testimonials {
+            name
+            subtitle
+            text
+        }
+    }
+`
