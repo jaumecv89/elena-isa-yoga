@@ -1,17 +1,18 @@
 import { Link } from "react-scroll"
 import image from "../assets/classes-image-1.webp"
-import beLegend from "../assets/logo-belegend.png"
+import byoode from "../assets/logo-byoode.png"
+import caraibi from "../assets/logo-caraibi.png"
 import dashAndStars from "../assets/logo-dashandstars.svg"
-import dreamfit from "../assets/logo-dreamfit.png"
-import satya from "../assets/logo-satya.svg"
-import sharma from "../assets/logo-sharmaclimbing.png"
-import yoganet from "../assets/logo-yoganet.png"
+import ecoderma from "../assets/logo-ecoderma.png"
+import kombucha from "../assets/logo-kombuchaenergy.png"
+import relax from "../assets/logo-relax.png"
+import yohemian from "../assets/logo-yohemian.png"
 import wave2 from "../assets/wave-5.svg"
 import wave3 from "../assets/wave-6.svg"
 import Image from "../components/Image"
 import { ClasesText } from "../utils/Texts"
 
-const collaborators = [dreamfit, sharma, beLegend, dashAndStars, yoganet, satya]
+const collaborators = [dashAndStars, caraibi, ecoderma, byoode, kombucha, yohemian, relax]
 
 const Collaborate = () => {
 

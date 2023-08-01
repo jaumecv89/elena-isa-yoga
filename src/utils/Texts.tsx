@@ -45,6 +45,11 @@ export const AboutText = {
             Para mí, el yoga es una herramienta poderosa para el autodescubrimiento, 
             la transformación y el crecimiento interior. Es un camino de amor propio, aceptación y gratitud, que nos invita 
             a vivir plenamente en el presente y a encontrar la paz en nuestro interior.
+        `,
+        `
+            He realizado varías formaciones durante estos años y sigo formándome día tras día, ya que creo que el yoga es el camino del eterno estudiante.
+            Mi práctica y enseñanza se basan sobretodo en las disciplinas del Ashtanga Yoga y Rocket Yoga, estilos dinámicos que nutren cuerpo y alma.
+            En mis clases me gusta acompañar y guiar a mis alumnos ofreciéndoles variantes y ajustes para que sean capaces de crear su propia autopráctica independiente.
         `
     ],
     quote: `"El verdadero yoga no es sobre la forma del cuerpo, sino sobre la forma de tu vida".`,
@@ -93,7 +98,14 @@ export const EventCardText = {
 
 export const EventsListText = {
     loading: "Cargando eventos...",
-    error: "Ha ocurrido un error al cargar los eventos."
+    error: "Ha ocurrido un error al cargar los eventos.",
+    empty: "Actualmente no hay eventos programados."
+}
+
+export const TestimonialsListText = {
+    loading: "Cargando testimonios...",
+    error: "Ha ocurrido un error al cargar los testimonios.",
+    empty: "Actualmente no hay testimonios."
 }
 
 export const ClasesText = {
@@ -125,5 +137,6 @@ export const ClasesText = {
         Fluyamos juntos con gracia y sincronicemos nuestra respiración con el movimiento en las clases de Vinyasa Flow. 
         Esta forma dinámica de yoga nos invita a realizar una secuencia fluida de posturas que aumentarán nuestra fuerza, coordinación 
         y nos conectarán con una sensación de fluidez en cada movimiento.
-    `
+    `,
+    testimonials: "Compartiendo experiencias"
 }

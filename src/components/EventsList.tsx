@@ -25,7 +25,7 @@ const EventsList = () => {
             </>
         ) : (
             <p className="w-full text-xl items-center text-center">
-                Actualmente no hay retiros programados.
+                {EventsListText.empty}
             </p>
         )}
     </div>

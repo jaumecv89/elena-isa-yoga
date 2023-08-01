@@ -35,7 +35,10 @@ const About = () => {
                 <div className="flex flex-col items-center">
                     <span className="heading-title">{AboutText.heading[1]}</span>
                     <h2 className="pb-5">{AboutText.title[1]}</h2>
-                    <p className="tablet:w-[60%] mb-10">{AboutText.paragraph[2]}</p>
+                    <div className="flex flex-col tablet:w-[80%] mb-10 gap-5 text-left">
+                        <p>{AboutText.paragraph[2]}</p>
+                        <p>{AboutText.paragraph[5]}</p>
+                    </div>
                     <div className="flex flex-col tablet:flex-row gap-5 mb-20">
                         <Link
                             to="classes"

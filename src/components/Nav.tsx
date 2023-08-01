@@ -52,13 +52,12 @@ const Nav = () => {
                             className="flex pl-10 items-center"
                             key={item.key}
                         >
-                            <Link
-                                to={item.link}
-                                smooth={true}
+                            <a
+                                href={item.link}
                                 className="cursor-pointer hover:text-primary transition"
                             >
                                 {item.icon}
-                            </Link>
+                            </a>
                         </div>
                     ))}
                 </div>
