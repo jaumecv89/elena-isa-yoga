@@ -55,7 +55,7 @@ const Classes = () => {
         </div>
         <Collaborate />
         <div className="container mx-auto py-28 text-center">
-            <div className="flex flex-col items-center mb-12">
+            <div className="flex flex-col items-center">
                 <h2 className="pb-5">{ClasesText.testimonials}</h2>
             </div>
             <TestimonialsList />
