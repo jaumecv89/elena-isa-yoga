@@ -4,7 +4,7 @@ import image4 from "../assets/classes-image-4.webp"
 import wave from "../assets/wave-4.svg"
 import Collaborate from "../components/Collaborate"
 import Image from "../components/Image"
-import TestimonialsList from "../components/TestimonialsList"
+import Testimonials from "../components/Testimonials"
 import { ClasesText } from "../utils/Texts"
 
 const Classes = () => {
@@ -55,10 +55,10 @@ const Classes = () => {
         </div>
         <Collaborate />
         <div className="container mx-auto py-28 text-center">
-            <div className="flex flex-col items-center mb-12">
+            <div className="flex flex-col items-center">
                 <h2 className="pb-5">{ClasesText.testimonials}</h2>
             </div>
-            <TestimonialsList />
+            <Testimonials />
         </div>
         <Image
             src={wave}

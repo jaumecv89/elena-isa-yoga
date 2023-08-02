@@ -102,7 +102,7 @@ export const EventsListText = {
     empty: "Actualmente no hay eventos programados."
 }
 
-export const TestimonialsListText = {
+export const TestimonialsText = {
     loading: "Cargando testimonios...",
     error: "Ha ocurrido un error al cargar los testimonios.",
     empty: "Actualmente no hay testimonios."

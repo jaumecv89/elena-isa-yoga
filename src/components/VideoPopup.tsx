@@ -6,30 +6,32 @@ type Props = {
     setVideoOpened: Dispatch<SetStateAction<boolean>>
 }
 
-const variants = { 
+const variants = {
     hidden: { x: "-100%", display: "none" },
-    visible: { x: 0, display: "", transitionEnd: { display: "none" }}
+    visible: { x: 0, display: "", transitionEnd: { display: "none" } }
 }
 
 const VideoPopup = ({ setVideoOpened }: Props) => {
 
-    return <div>
-        <div
-            onClick={() => setVideoOpened(false)}
-            className="absolute right-0 text-white text-2xl m-5 rounded-full bg-black/60 shadow-2xl p-2 cursor-pointer transition hover:scale-110 z-[60]"
-        >
-            <AiOutlineClose/>
-        </div>
-        <motion.div
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ ease: [0.22, 0.50, 0.08, 1], duration: 2.5 }}
-            className="absolute w-full h-full bg-white z-50"
-        />
-    </div>
-    
-    
+    return (
+        <>
+            <div
+                onClick={() => setVideoOpened(false)}
+                className="absolute w-full h-full z-[60]"
+            >
+                <div className="absolute top-0 right-0 text-white text-2xl m-5 rounded-full bg-black/60 shadow-2xl p-2 cursor-pointer transition hover:scale-110">
+                    <AiOutlineClose />
+                </div>
+            </div>
+            <motion.div
+                variants={variants}
+                initial="hidden"
+                animate="visible"
+                transition={{ ease: [0.22, 0.50, 0.08, 1], duration: 2.5 }}
+                className="absolute w-full h-full bg-white z-50"
+            />
+        </>
+    )
 }
 
 export default VideoPopup
