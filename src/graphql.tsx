@@ -15,7 +15,7 @@ export const GET_EVENTS_QUERY = gql`
 
 export const GET_TESTIMONIALS_QUERY = gql`
     {
-        testimonials {
+        testimonials(first: 7) {
             name
             subtitle
             text

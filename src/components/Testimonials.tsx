@@ -5,7 +5,7 @@ import { BiSolidQuoteAltLeft } from "react-icons/bi"
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 import { GET_TESTIMONIALS_QUERY } from "../graphql"
 import { ITestimonials } from "../types/Testimonial"
-import { TestimonialsListText } from "../utils/Texts"
+import { TestimonialsText } from "../utils/Texts"
 
 const variants = {
     initial: (direction: number) => {
@@ -52,22 +52,22 @@ const TestimonialsList = () => {
         <>
             {loading ? (
                 <p className="w-full text-xl items-center text-center">
-                    {TestimonialsListText.loading}
+                    {TestimonialsText.loading}
                 </p>
             ) : error ? (
                 <p className="w-full text-xl items-center text-center">
-                    {TestimonialsListText.error}
+                    {TestimonialsText.error}
                 </p>
             ) : data?.testimonials.length ? (
                 <div className="flex flex-col items-center gap-10">
                     <div className="flex items-center gap-[10%] overflow-hidden">
                         <div
                             onClick={handlePrev}
-                            className="text-white text-2xl bg-text/40 hover:bg-primary p-2 rounded-full cursor-pointer transition"
+                            className="hidden tablet:flex text-white text-2xl bg-text/40 hover:bg-primary p-2 rounded-full cursor-pointer transition"
                         >
                             <IoIosArrowBack />
                         </div>
-                        <AnimatePresence initial={false}>
+                        <AnimatePresence initial={false} custom={direction}>
                             <>
                                 <motion.div
                                     variants={variants}
@@ -78,14 +78,14 @@ const TestimonialsList = () => {
                                     key={active}
                                     className="flex flex-col w-full items-center"
                                 >
-                                    <p className="flex min-h-[150px] items-center">
+                                    <p className="flex min-h-[250px] tablet:min-h-[150px] items-center">
                                         {testimonials[active].text}
                                     </p>
-                                    <BiSolidQuoteAltLeft className="text-primary text-3xl mb-5" />
-                                    <span className="font-primary font-bold text-secondary text-xl mb-2">
+                                    <BiSolidQuoteAltLeft className="text-primary text-2xl tablet:text-3xl mb-5" />
+                                    <span className="font-primary font-bold text-secondary text-md tablet:text-xl mb-2">
                                         {testimonials[active].name}
                                     </span>
-                                    <span className="text-sm text-text">
+                                    <span className="text-xs tablet:text-sm text-text">
                                         {testimonials[active].subtitle}
                                     </span>
 
@@ -94,24 +94,38 @@ const TestimonialsList = () => {
                         </AnimatePresence>
                         <div
                             onClick={handleNext}
-                            className="text-white text-2xl bg-text/40 hover:bg-primary p-2 rounded-full cursor-pointer transition"
+                            className="hidden tablet:flex text-white text-2xl bg-text/40 hover:bg-primary p-2 rounded-full cursor-pointer transition"
                         >
                             <IoIosArrowForward />
                         </div>
                     </div>
-                    <div className="flex gap-2">
-                        {testimonials.map((_, i) => (
-                            <div
-                                onClick={() => setActive(i)}
-                                key={i}
-                                className={`${i === active ? "bg-primary" : "bg-text/40"} h-[10px] w-[10px] rounded-full cursor-pointer`}
-                            />
-                        ))}
+                    <div className="flex gap-10 items-center">
+                        <div
+                            onClick={handlePrev}
+                            className="tablet:hidden flex text-white text-xl bg-text/40 hover:bg-primary p-2 rounded-full cursor-pointer transition"
+                        >
+                            <IoIosArrowBack />
+                        </div>
+                        <div className="flex gap-2">
+                            {testimonials.map((_, i) => (
+                                <div
+                                    onClick={() => setActive(i)}
+                                    key={i}
+                                    className={`${i === active ? "bg-primary" : "bg-text/40"} h-[10px] w-[10px] rounded-full cursor-pointer`}
+                                />
+                            ))}
+                        </div>
+                        <div
+                            onClick={handleNext}
+                            className="tablet:hidden text-white text-xl bg-text/40 hover:bg-primary p-2 rounded-full cursor-pointer transition"
+                        >
+                            <IoIosArrowForward />
+                        </div>
                     </div>
                 </div>
             ) : (
                 <p className="w-full text-xl items-center text-center">
-                    {TestimonialsListText.empty}
+                    {TestimonialsText.empty}
                 </p>
             )}
         </>

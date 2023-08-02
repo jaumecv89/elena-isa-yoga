@@ -43,9 +43,9 @@ const Collaborate = () => {
                     <span className="font-primary text-text uppercase pb-8 tracking-widest">
                         {ClasesText.colaborators}
                     </span>
-                    <div className="flex flex-wrap wrap gap-10 opacity-[0.55] justify-center">
+                    <div className="flex flex-wrap wrap gap-10 justify-center">
                         {collaborators.map((item, i) =>
-                            <img src={item} key={i} alt="Collaborator" className="h-10 tablet:h-12" />
+                            <img src={item} key={i} alt="Collaborator" className="h-10 tablet:h-12 opacity-[0.55] hover:opacity-100 transition" />
                         )}
                     </div>
                 </div>
