@@ -48,9 +48,6 @@ export default {
 			"6xl": "96px",
 			"7xl": "116px",
 		},
-		backgroundImage: {
-			"about-image": "url('/src/assets/about-image-1.jpeg')",
-		},
 	},
 	plugins: [],
 };

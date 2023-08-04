@@ -1,3 +1,5 @@
+<img src="/src/assets/thumbnail.jpg" width="100%" />
+
 # Elena Isa - Yoga teacher
 
 Welcome to the Elena Isa - Yoga Teacher Website repository! This project is dedicated to showcasing Elena Isa's yoga services and providing valuable resources to her students. The website is built using React, Typescript, Vite, Vitest, and Tailwind CSS, and incorporates various additional features such as animation, smooth scrolling, icons, email functionality, and an animated hamburger menu.
