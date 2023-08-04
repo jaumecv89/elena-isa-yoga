@@ -65,7 +65,7 @@ const Classes = () => {
             fallback={wave}
             type="image/svg"
             alt="Wave transition"
-            className="relative bottom-[-1px]"
+            className="relative w-full h-full bottom-[-1px]"
         />
     </section>
 }

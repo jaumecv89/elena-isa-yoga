@@ -1,12 +1,12 @@
 import { Link } from "react-scroll"
 import image from "../assets/classes-image-1.webp"
-import byoode from "../assets/logo-byoode.png"
-import caraibi from "../assets/logo-caraibi.png"
+import byoode from "../assets/logo-byoode.webp"
+import caraibi from "../assets/logo-caraibi.webp"
 import dashAndStars from "../assets/logo-dashandstars.svg"
-import ecoderma from "../assets/logo-ecoderma.png"
-import kombucha from "../assets/logo-kombuchaenergy.png"
-import relax from "../assets/logo-relax.png"
-import yohemian from "../assets/logo-yohemian.png"
+import ecoderma from "../assets/logo-ecoderma.webp"
+import kombucha from "../assets/logo-kombuchaenergy.webp"
+import relax from "../assets/logo-relax.webp"
+import yohemian from "../assets/logo-yohemian.webp"
 import wave2 from "../assets/wave-5.svg"
 import wave3 from "../assets/wave-6.svg"
 import Image from "../components/Image"
@@ -26,7 +26,7 @@ const Collaborate = () => {
                 fallback={wave2}
                 type="image/svg"
                 alt="Wave transition"
-                className="absolute top-[-1px] left-0"
+                className="absolute w-full h-fit top-[-1px] left-0"
             />
             <div className="w-full h-full absolute bg-background/90" />
             <div className="flex flex-col container relative py-20 items-center text-center">
@@ -45,7 +45,7 @@ const Collaborate = () => {
                     </span>
                     <div className="flex flex-wrap wrap gap-10 justify-center">
                         {collaborators.map((item, i) =>
-                            <img src={item} key={i} alt="Collaborator" className="h-10 tablet:h-12 opacity-[0.55] hover:opacity-100 transition" />
+                            <img src={item} key={i} alt="Collaborator" className="w-fit h-10 tablet:h-12 opacity-[0.55] hover:opacity-100 transition" />
                         )}
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const Collaborate = () => {
                 fallback={wave3}
                 type="image/svg"
                 alt="Wave transition"
-                className="absolute bottom-[-1px] left-0"
+                className="absolute w-full h-fit bottom-[-1px] left-0"
             />
         </div>
     )

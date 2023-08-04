@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from "framer-motion"
 import { useState } from "react"
 import { FaClock, FaLocationDot } from "react-icons/fa6"
 import { MdExpandLess, MdExpandMore } from "react-icons/md"
@@ -21,15 +22,16 @@ const EventCard: React.FC<Props> = ({ event }) => {
     }
 
     return (
-        <div
+        <motion.div
+            initial={false}
             onClick={toggleOpen}
-            className="flex flex-col relative bg-background rounded-md shadow-lg border-[1px] border-primary/30 cursor-pointer z-10"
+            className="flex flex-col relative bg-background rounded-md shadow-lg border-[1px] border-primary/30 cursor-pointer"
         >
             {detailsOpen
                 ? <MdExpandLess className="absolute text-primary m-1 text-2xl top-0 right-0" />
                 : <MdExpandMore className="absolute text-primary m-1 text-2xl top-0 right-0" />
             }
-            <div className="flex flex-col tablet:flex-row p-6">
+            <div className="flex flex-col tablet:flex-row p-6 z-30">
                 <div className="flex flex-row tablet:w-[70%] pb-6 tablet:pb-0">
                     <div className="flex flex-col w-[20%] pr-6 justify-center border-r-[1px] border-primary/30">
                         <span className="text-[11px] tablet:text-[12px] desktop:text-sm text-text font-primary">
@@ -60,34 +62,45 @@ const EventCard: React.FC<Props> = ({ event }) => {
                     </div>
                 </div>
             </div>
-            {detailsOpen &&
-                <div className="flex flex-col">
-                    <div className="flex flex-col px-6 pb-6 gap-6">
-                        <p className="text-left m-0">
-                            {event.description}
-                        </p>
-                    </div>
-                    <div className="flex flex-row items-center">
-                        {event.price &&
-                            <div className="w-full px-6 py-3 border-t-[1px] border-primary/30">
+            <AnimatePresence initial={false}>
+                {detailsOpen &&
+                    <motion.div
+                        key="content"
+                        initial="collapsed"
+                        animate="open"
+                        exit="collapsed"
+                        variants={{
+                            open: { opacity: 1, y: 0, height: "auto" },
+                            collapsed: { opacity: 0, y: -50, height: 0 },
+                        }}
+                        transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
+                        className="flex flex-col z-20"
+                    >
+                        <div className="flex flex-col px-6 pb-6 gap-6">
+                            <p className="text-left m-0">
+                                {event.description}
+                            </p>
+                        </div>
+                        <div className="flex px-6 pb-6 items-center justify-between">
+                            <Link
+                                to="contact"
+                                smooth="true"
+                                onClick={toggleOpen}
+                                className="btn-primary"
+                            >
+                                {EventCardText.signIn}
+                            </Link>
+                            <span className="text-primary border-[1px] border-alternative uppercase text-[17px] py-[16px] px-[40px] leading-4 bg-white rounded-3xl justify-center">
                                 {event.price
                                     ? `${event.price} €`
                                     : "-"
                                 }
-                            </div>
-                        }
-                        <Link
-                            to="contact"
-                            smooth="true"
-                            onClick={toggleOpen}
-                            className="w-full text-white px-6 py-3 bg-primary hover:bg-accent rounded-br-md border-t-[1px] border-primary"
-                        >
-                            {EventCardText.signIn}
-                        </Link>
-                    </div>
-                </div>
-            }
-        </div>
+                            </span>
+                        </div>
+                    </motion.div>
+                }
+            </AnimatePresence>
+        </motion.div>
     )
 }
 
