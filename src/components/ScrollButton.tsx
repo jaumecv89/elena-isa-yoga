@@ -20,7 +20,7 @@ const ScrollButton = () => {
     window.addEventListener("scroll", toggleVisible);
 
     return <button
-        className="fixed bottom-0 right-0 text-white text-2xl bg-primary p-2 m-5 rounded-full shadow-lg cursor-pointer transition ease-in-out hover:bg-accent"
+        className="fixed bottom-0 right-0 text-white text-2xl bg-primary p-2 m-5 rounded-full shadow-lg cursor-pointer transition ease-in-out hover:bg-accent z-50"
         style={{ display: !visible ? "none" : "" }}
         onClick={scrollToTop}
     >

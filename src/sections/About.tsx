@@ -1,4 +1,5 @@
 import { Link } from "react-scroll"
+import webpImage1 from "../assets/about-image-1.webp"
 import jpegImage2 from "../assets/about-image-2.jpeg"
 import webpImage2 from "../assets/about-image-2.webp"
 import wave1 from "../assets/wave-1.svg"
@@ -11,7 +12,10 @@ const About = () => {
     return <section id="about" className="w-full select-none">
         <div className="container mx-auto py-28 text-center">
             <div className="flex flex-col tablet:flex-row gap-16 mb-28">
-                <div className="flex h-[30em] tablet:h-auto tablet:w-[50%] bg-about-image bg-no-repeat bg-cover bg-center rounded-lg" />
+                <div
+                    className="flex h-[30em] tablet:h-auto tablet:w-[50%] bg-no-repeat bg-cover bg-center rounded-lg"
+                    style={{ backgroundImage: `url(${webpImage1})` }}
+                />
                 <div className="flex flex-col tablet:w-[50%] tablet:text-left">
                     <span className="heading-title">{AboutText.heading[0]}</span>
                     <h2 className="pb-5">{AboutText.title[0]}</h2>
@@ -29,6 +33,7 @@ const About = () => {
             fallback={wave1}
             type="image/svg"
             alt="Wave transition"
+            className="w-full h-full"
         />
         <div className="bg-white">
             <div className="container mx-auto py-20 tablet:pb-0 text-center">
@@ -60,7 +65,7 @@ const About = () => {
                             src={webpImage2}
                             fallback={jpegImage2}
                             alt="Clase de yoga"
-                            className="rounded-xl"
+                            className="w-full h-full rounded-xl"
                         />
                         <div className="relative tablet:w-[60%] tablet:top-[-150px] pt-10 tablet:p-10 tablet:rounded-lg tablet:shadow-lg tablet:bg-background">
                             <h2>{AboutText.title[2]}</h2>
@@ -75,7 +80,7 @@ const About = () => {
                 fallback={wave2}
                 type="image/svg"
                 alt="Wave transition"
-                className="relative bottom-[-1px]"
+                className="relative w-full h-full bottom-[-1px]"
             />
         </div>
     </section>
