@@ -9,81 +9,83 @@ import { AboutText } from "../utils/Texts"
 
 const About = () => {
 
-    return <section id="about" className="w-full select-none">
-        <div className="container mx-auto py-28 text-center">
-            <div className="flex flex-col tablet:flex-row gap-16 mb-28">
-                <div
-                    className="flex h-[30em] tablet:h-auto tablet:w-[50%] bg-no-repeat bg-cover bg-center rounded-lg"
-                    style={{ backgroundImage: `url(${webpImage1})` }}
-                />
-                <div className="flex flex-col tablet:w-[50%] tablet:text-left">
-                    <span className="heading-title">{AboutText.heading[0]}</span>
-                    <h2 className="pb-5">{AboutText.title[0]}</h2>
-                    <p>{AboutText.paragraph[0]}</p>
-                    <p className="mb-0">{AboutText.paragraph[1]}</p>
+    return (
+        <section id="about" className="w-full select-none">
+            <div className="container mx-auto py-28 text-center">
+                <div className="flex flex-col tablet:flex-row gap-16 mb-28">
+                    <div
+                        className="flex h-[30em] tablet:h-auto tablet:w-[50%] bg-no-repeat bg-cover bg-center rounded-lg"
+                        style={{ backgroundImage: `url(${webpImage1})` }}
+                    />
+                    <div className="flex flex-col tablet:w-[50%] tablet:text-left">
+                        <span className="heading-title">{AboutText.heading[0]}</span>
+                        <h2 className="pb-5">{AboutText.title[0]}</h2>
+                        <p>{AboutText.paragraph[0]}</p>
+                        <p className="mb-0">{AboutText.paragraph[1]}</p>
+                    </div>
                 </div>
-            </div>
-            <div className="flex flex-col gap-5 items-center text-secondary">
-                <span className="font-primary italic text-[22px] tablet:text-[28px] desktop:text-[40px] leading-[1.2em] tablet:w-[80%] desktop:w-[70%]">{AboutText.quote}</span>
-                <span className="tablet:text-lg desktop:text-xl">{AboutText.author}</span>
-            </div>
-        </div>
-        <Image
-            src={wave1}
-            fallback={wave1}
-            type="image/svg"
-            alt="Wave transition"
-            className="w-full h-full"
-        />
-        <div className="bg-white">
-            <div className="container mx-auto py-20 tablet:pb-0 text-center">
-                <div className="flex flex-col items-center">
-                    <span className="heading-title">{AboutText.heading[1]}</span>
-                    <h2 className="pb-5">{AboutText.title[1]}</h2>
-                    <div className="flex flex-col tablet:w-[80%] mb-10 gap-5 text-left">
-                        <p>{AboutText.paragraph[2]}</p>
-                        <p>{AboutText.paragraph[5]}</p>
-                    </div>
-                    <div className="flex flex-col tablet:flex-row gap-5 mb-20">
-                        <Link
-                            to="classes"
-                            smooth="true"
-                            className="btn-primary"
-                        >
-                            {AboutText.button}
-                        </Link>
-                        <Link
-                            to="events"
-                            smooth="true"
-                            className="btn-secondary"
-                        >
-                            {AboutText.button2}
-                        </Link>
-                    </div>
-                    <div className="flex flex-col tablet:w-[85%] items-center">
-                        <Image
-                            src={webpImage2}
-                            fallback={jpegImage2}
-                            alt="Clase de yoga"
-                            className="w-full h-full rounded-xl"
-                        />
-                        <div className="relative tablet:w-[60%] tablet:top-[-150px] pt-10 tablet:p-10 tablet:rounded-lg tablet:shadow-lg tablet:bg-background">
-                            <h2>{AboutText.title[2]}</h2>
-                            <p>{AboutText.paragraph[3]}</p>
-                            <p>{AboutText.paragraph[4]}</p>
-                        </div>
-                    </div>
+                <div className="flex flex-col gap-5 items-center text-secondary">
+                    <span className="font-primary italic text-[22px] tablet:text-[28px] desktop:text-[40px] leading-[1.2em] tablet:w-[80%] desktop:w-[70%]">{AboutText.quote}</span>
+                    <span className="tablet:text-lg desktop:text-xl">{AboutText.author}</span>
                 </div>
             </div>
             <Image
-                src={wave2}
-                fallback={wave2}
+                src={wave1}
+                fallback={wave1}
                 type="image/svg"
-                alt="Wave transition"
-                className="relative w-full h-full bottom-[-1px]"
+                alt="Top page transition"
+                className="w-full h-full"
             />
-        </div>
-    </section>
+            <div className="bg-white">
+                <div className="container mx-auto py-20 tablet:pb-0 text-center">
+                    <div className="flex flex-col items-center">
+                        <span className="heading-title">{AboutText.heading[1]}</span>
+                        <h2 className="pb-5">{AboutText.title[1]}</h2>
+                        <div className="flex flex-col tablet:w-[80%] mb-10 gap-5 text-left">
+                            <p>{AboutText.paragraph[2]}</p>
+                            <p>{AboutText.paragraph[5]}</p>
+                        </div>
+                        <div className="flex flex-col tablet:flex-row gap-5 mb-20">
+                            <Link
+                                to="classes"
+                                smooth="true"
+                                className="btn-primary"
+                            >
+                                {AboutText.button}
+                            </Link>
+                            <Link
+                                to="events"
+                                smooth="true"
+                                className="btn-secondary"
+                            >
+                                {AboutText.button2}
+                            </Link>
+                        </div>
+                        <div className="flex flex-col tablet:w-[85%] items-center">
+                            <Image
+                                src={webpImage2}
+                                fallback={jpegImage2}
+                                alt="Clase de yoga"
+                                className="w-full h-full rounded-xl"
+                            />
+                            <div className="relative tablet:w-[60%] tablet:top-[-150px] pt-10 tablet:p-10 tablet:rounded-lg tablet:shadow-lg tablet:bg-background">
+                                <h2>{AboutText.title[2]}</h2>
+                                <p>{AboutText.paragraph[3]}</p>
+                                <p>{AboutText.paragraph[4]}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <Image
+                    src={wave2}
+                    fallback={wave2}
+                    type="image/svg"
+                    alt="Bottom page transition"
+                    className="relative w-full h-full bottom-[-1px]"
+                />
+            </div>
+        </section>
+    )
 }
 
 export default About
