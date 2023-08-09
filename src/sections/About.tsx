@@ -8,7 +8,6 @@ import Image from "../components/Image"
 import { AboutText } from "../utils/Texts"
 
 const About = () => {
-
     return (
         <section id="about" className="w-full select-none">
             <div className="container mx-auto py-28 text-center">
@@ -18,15 +17,21 @@ const About = () => {
                         style={{ backgroundImage: `url(${webpImage1})` }}
                     />
                     <div className="flex flex-col tablet:w-[50%] tablet:text-left">
-                        <span className="heading-title">{AboutText.heading[0]}</span>
+                        <span className="heading-title">
+                            {AboutText.heading[0]}
+                        </span>
                         <h2 className="pb-5">{AboutText.title[0]}</h2>
                         <p>{AboutText.paragraph[0]}</p>
                         <p className="mb-0">{AboutText.paragraph[1]}</p>
                     </div>
                 </div>
                 <div className="flex flex-col gap-5 items-center text-secondary">
-                    <span className="font-primary italic text-[22px] tablet:text-[28px] desktop:text-[40px] leading-[1.2em] tablet:w-[80%] desktop:w-[70%]">{AboutText.quote}</span>
-                    <span className="tablet:text-lg desktop:text-xl">{AboutText.author}</span>
+                    <span className="font-primary italic text-[22px] tablet:text-[28px] desktop:text-[40px] leading-[1.2em] tablet:w-[80%] desktop:w-[70%]">
+                        {AboutText.quote}
+                    </span>
+                    <span className="tablet:text-lg desktop:text-xl">
+                        {AboutText.author}
+                    </span>
                 </div>
             </div>
             <Image
@@ -39,7 +44,9 @@ const About = () => {
             <div className="bg-white">
                 <div className="container mx-auto py-20 tablet:pb-0 text-center">
                     <div className="flex flex-col items-center">
-                        <span className="heading-title">{AboutText.heading[1]}</span>
+                        <span className="heading-title">
+                            {AboutText.heading[1]}
+                        </span>
                         <h2 className="pb-5">{AboutText.title[1]}</h2>
                         <div className="flex flex-col tablet:w-[80%] mb-10 gap-5 text-left">
                             <p>{AboutText.paragraph[2]}</p>

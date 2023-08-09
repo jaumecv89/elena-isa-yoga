@@ -11,24 +11,25 @@ const variants = {
     initial: (direction: number) => {
         return {
             x: direction < 0 ? 200 : -200,
-            opacity: 0
+            opacity: 0,
         }
     },
     animate: {
         x: 0,
-        opacity: 1
+        opacity: 1,
     },
     exit: (direction: number) => {
         return {
             x: direction < 0 ? -200 : 200,
-            opacity: 0
+            opacity: 0,
         }
-    }
+    },
 }
 
 const TestimonialsList = () => {
-
-    const { loading, error, data } = useQuery<ITestimonials>(GET_TESTIMONIALS_QUERY)
+    const { loading, error, data } = useQuery<ITestimonials>(
+        GET_TESTIMONIALS_QUERY
+    )
     const testimonials = data?.testimonials?.length ? data.testimonials : []
 
     const [active, setActive] = useState(0)
@@ -36,16 +37,16 @@ const TestimonialsList = () => {
 
     const handlePrev = () => {
         setDirection(1)
-        setActive(active => (
+        setActive((active) =>
             active === 0 ? testimonials.length - 1 : active - 1
-        ))
+        )
     }
 
     const handleNext = () => {
         setDirection(-1)
-        setActive(active => (
+        setActive((active) =>
             active === testimonials.length - 1 ? 0 : active + 1
-        ))
+        )
     }
 
     return (
@@ -88,7 +89,6 @@ const TestimonialsList = () => {
                                     <span className="text-xs tablet:text-sm text-text">
                                         {testimonials[active].subtitle}
                                     </span>
-
                                 </motion.div>
                             </>
                         </AnimatePresence>
@@ -111,7 +111,11 @@ const TestimonialsList = () => {
                                 <div
                                     onClick={() => setActive(i)}
                                     key={i}
-                                    className={`${i === active ? "bg-primary" : "bg-text/40"} h-[10px] w-[10px] rounded-full cursor-pointer`}
+                                    className={`${
+                                        i === active
+                                            ? "bg-primary"
+                                            : "bg-text/40"
+                                    } h-[10px] w-[10px] rounded-full cursor-pointer`}
                                 />
                             ))}
                         </div>

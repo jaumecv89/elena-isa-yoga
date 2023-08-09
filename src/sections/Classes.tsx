@@ -8,14 +8,15 @@ import Testimonials from "../components/Testimonials"
 import { ClasesText } from "../utils/Texts"
 
 const Classes = () => {
-
     return (
         <section id="classes" className="select-none">
             <div className="container mx-auto py-28 text-center">
                 <div className="flex flex-col items-center mb-12">
                     <span className="heading-title">{ClasesText.heading}</span>
                     <h2 className="pb-5">{ClasesText.title}</h2>
-                    <p className="tablet:w-[90%] desktop:w-[70%]">{ClasesText.paragraph}</p>
+                    <p className="tablet:w-[90%] desktop:w-[70%]">
+                        {ClasesText.paragraph}
+                    </p>
                 </div>
                 <div className="flex flex-col gap-14 items-center">
                     <div className="flex flex-col tablet:flex-row w-full relative items-center justify-center">

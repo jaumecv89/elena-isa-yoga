@@ -1,25 +1,20 @@
 export const NavText = {
-    title: "Elena Isa"
+    title: "Elena Isa",
 }
 
 export const HeroText = {
-    title: [
-        "yoga",
-        "con Elena"
-    ],
-    paragraph: "Empodera tu mente, fortalece tu cuerpo y eleva tu espíritu a través del yoga.",
-    button: "Reproduce el vídeo"
+    title: ["yoga", "con Elena"],
+    paragraph:
+        "Empodera tu mente, fortalece tu cuerpo y eleva tu espíritu a través del yoga.",
+    button: "Reproduce el vídeo",
 }
 
 export const AboutText = {
-    heading: [
-        "¿Quieres tiempo para respirar?",
-        "Mi historia"
-    ],
+    heading: ["¿Quieres tiempo para respirar?", "Mi historia"],
     title: [
         "El enfoque en la fuerza, el equilibrio y la flexibilidad.",
         "Un viaje a través del yoga.",
-        "Filosofía"
+        "Filosofía",
     ],
     paragraph: [
         `
@@ -50,12 +45,12 @@ export const AboutText = {
             He realizado varías formaciones durante estos años y sigo formándome día tras día, ya que creo que el yoga es el camino del eterno estudiante.
             Mi práctica y enseñanza se basan sobretodo en las disciplinas del Ashtanga Yoga y Rocket Yoga, estilos dinámicos que nutren cuerpo y alma.
             En mis clases me gusta acompañar y guiar a mis alumnos ofreciéndoles variantes y ajustes para que sean capaces de crear su propia autopráctica independiente.
-        `
+        `,
     ],
     quote: `"El verdadero yoga no es sobre la forma del cuerpo, sino sobre la forma de tu vida".`,
     author: "- Aadil Palkhivala",
     button: "Descubre mis clases",
-    button2: "Próximos eventos"
+    button2: "Próximos eventos",
 }
 
 export const ContactText = {
@@ -69,7 +64,7 @@ export const ContactText = {
     email: "Email",
     contact: "contacto@elenaisa.com",
     phone: "Teléfono",
-    phoneContact: "+34 679 741 661"
+    phoneContact: "+34 679 741 661",
 }
 
 export const FormText = {
@@ -78,34 +73,34 @@ export const FormText = {
     message: "Mensaje",
     send: "Enviar",
     success: "Mensaje enviado correctamente",
-    error: "Ha habido un error al enviar el mensaje"
+    error: "Ha habido un error al enviar el mensaje",
 }
 
 export const FooterText = {
     title: "Elena Isa",
     copyright: "© 2023 Elena Isa. Todos los derechos reservados.",
-    website: "https://jaumecampderros.com/"
+    website: "https://jaumecampderros.com/",
 }
 
 export const EventsText = {
     heading: "Calendario",
-    title: "Próximos eventos y retiros"
+    title: "Próximos eventos y retiros",
 }
 
 export const EventCardText = {
-    signIn: "Apúntate"
+    signIn: "Apúntate",
 }
 
 export const EventsListText = {
     loading: "Cargando eventos...",
     error: "Ha ocurrido un error al cargar los eventos.",
-    empty: "Actualmente no hay eventos programados."
+    empty: "Actualmente no hay eventos programados.",
 }
 
 export const TestimonialsText = {
     loading: "Cargando testimonios...",
     error: "Ha ocurrido un error al cargar los testimonios.",
-    empty: "Actualmente no hay testimonios."
+    empty: "Actualmente no hay testimonios.",
 }
 
 export const ClasesText = {
@@ -119,7 +114,8 @@ export const ClasesText = {
         una amplia variedad de enfoques de yoga, aquí os presento algunos de ellos.
     `,
     colaboration: "¿Colaboramos?",
-    colaborationParagraph: "Descubre nuevas posibilidades con un exclusivo taller personalizado. Crea un evento o retiro único para tu empresa.",
+    colaborationParagraph:
+        "Descubre nuevas posibilidades con un exclusivo taller personalizado. Crea un evento o retiro único para tu empresa.",
     contact: "Contacta conmigo",
     colaborators: "Colaboradores",
     class1Title: "Ashtanga Yoga",
@@ -138,5 +134,5 @@ export const ClasesText = {
         Esta forma dinámica de yoga nos invita a realizar una secuencia fluida de posturas que aumentarán nuestra fuerza, coordinación 
         y nos conectarán con una sensación de fluidez en cada movimiento.
     `,
-    testimonials: "Compartiendo experiencias"
+    testimonials: "Compartiendo experiencias",
 }

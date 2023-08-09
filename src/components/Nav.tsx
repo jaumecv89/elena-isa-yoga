@@ -1,31 +1,32 @@
-import { AnimatePresence, easeInOut, motion } from 'framer-motion'
-import { Squash as Hamburger } from 'hamburger-react'
-import { useEffect, useState } from "react"
+import { AnimatePresence, easeInOut, motion } from "framer-motion"
+import { Squash as Hamburger } from "hamburger-react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-scroll"
 import MenuItems from "../utils/MenuItems"
-import SocialMedia from '../utils/SocialMedia'
+import SocialMedia from "../utils/SocialMedia"
 import { NavText } from "../utils/Texts"
 
 const animation = {
     initial: { x: "-100%" },
     animate: { x: 0 },
     exit: { x: "-100%" },
-    transition: { ease: easeInOut, duration: 0.4 }
+    transition: { ease: easeInOut, duration: 0.4 },
 }
 
-const Nav = () => {
-
+const Nav: React.FC = () => {
     const [isOpen, setOpen] = useState(false)
 
     useEffect(() => {
         isOpen
-            ? document.body.style.overflow = "hidden"
-            : document.body.style.overflow = "unset"
+            ? (document.body.style.overflow = "hidden")
+            : (document.body.style.overflow = "unset")
     }, [isOpen])
 
     return (
         <nav className="flex w-full h-full tablet:h-auto absolute justify-center text-white select-none">
-            <div className={`flex container justify-between items-center py-8 absolute z-30`}>
+            <div
+                className={`flex container justify-between items-center py-8 absolute z-30`}
+            >
                 <span className="font-primary text-2xl uppercase">
                     {NavText.title}
                 </span>
@@ -62,11 +63,10 @@ const Nav = () => {
                             </div>
                         ))}
                     </div>
-
                 </ul>
             </div>
             <AnimatePresence>
-                {isOpen &&
+                {isOpen && (
                     <motion.div
                         {...animation}
                         className="flex w-full h-full absolute top-0 items-center justify-center bg-secondary/90 backdrop-blur-md z-20"
@@ -97,7 +97,7 @@ const Nav = () => {
                             ))}
                         </div>
                     </motion.div>
-                }
+                )}
             </AnimatePresence>
         </nav>
     )

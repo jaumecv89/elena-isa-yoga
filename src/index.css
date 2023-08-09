@@ -5,40 +5,40 @@
 @tailwind utilities;
 
 .btn-primary {
-	@apply text-paragraph capitalize text-[17px] py-[16px] px-[40px] leading-4 bg-primary rounded-tr-3xl rounded-b-3xl hover:bg-accent transition duration-150 ease-in-out shadow-lg justify-center cursor-pointer
+    @apply text-paragraph capitalize text-[17px] py-[16px] px-[40px] leading-4 bg-primary rounded-tr-3xl rounded-b-3xl hover:bg-accent transition duration-150 ease-in-out shadow-lg justify-center cursor-pointer;
 }
 
 .btn-secondary {
-	@apply text-primary capitalize text-[17px] py-[16px] px-[40px] leading-4 rounded rounded-tr-3xl rounded-b-3xl justify-center cursor-pointer transition duration-150 border-2 border-primary hover:bg-primary hover:text-white
+    @apply text-primary capitalize text-[17px] py-[16px] px-[40px] leading-4 rounded rounded-tr-3xl rounded-b-3xl justify-center cursor-pointer transition duration-150 border-2 border-primary hover:bg-primary hover:text-white;
 }
 
 .heading-title {
-	@apply text-primary text-md tablet:text-lg desktop:text-[20px] leading-none mb-5;
+    @apply text-primary text-md tablet:text-lg desktop:text-[20px] leading-none mb-5;
 }
 
 .icons-container {
-	@apply flex flex-row gap-4 items-center;
+    @apply flex flex-row gap-4 items-center;
 }
 
 .contact-icon {
-	@apply h-fit text-xl p-4 rounded-full bg-smooth text-primary;
+    @apply h-fit text-xl p-4 rounded-full bg-smooth text-primary;
 }
 
 @layer base {
-	body {
-		@apply font-secondary text-md bg-background;
-	}
-	h1 {
-		@apply text-secondary font-primary text-5xl tablet:text-6xl desktop:text-7xl leading-[1.1em];
-	}
-	h2 {
-		@apply text-secondary font-primary text-2xl tablet:text-[34px] desktop:text-[50px] leading-[1.2em] mb-5;
-	}
-	p {
-		@apply text-text font-secondary text-md desktop:text-lg leading-[1.4em] desktop:leading-[1.5em] mb-5;
-	}
-	input,
-	textarea {
-		@apply min-h-[47px] border border-smoother focus:border-primary outline-none rounded-r-lg rounded-bl-lg py-[6px] px-4 bg-background transition;
-	}
+    body {
+        @apply font-secondary text-md bg-background;
+    }
+    h1 {
+        @apply text-secondary font-primary text-5xl tablet:text-6xl desktop:text-7xl leading-[1.1em];
+    }
+    h2 {
+        @apply text-secondary font-primary text-2xl tablet:text-[34px] desktop:text-[50px] leading-[1.2em] mb-5;
+    }
+    p {
+        @apply text-text font-secondary text-md desktop:text-lg leading-[1.4em] desktop:leading-[1.5em] mb-5;
+    }
+    input,
+    textarea {
+        @apply min-h-[47px] border border-smoother focus:border-primary outline-none rounded-r-lg rounded-bl-lg py-[6px] px-4 bg-background transition;
+    }
 }

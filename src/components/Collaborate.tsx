@@ -19,11 +19,10 @@ const collaborators = [
     { url: byoode, alt: "Byoode" },
     { url: kombucha, alt: "Kombucha" },
     { url: yohemian, alt: "Yohemian" },
-    { url: relax, alt: "Relax" }
+    { url: relax, alt: "Relax" },
 ]
 
 const Collaborate = () => {
-
     return (
         <div
             className="flex w-full relative h-[800px] bg-cover bg-center bg-no-repeat bg-fixed items-center justify-center"
@@ -52,9 +51,14 @@ const Collaborate = () => {
                         {ClasesText.colaborators}
                     </span>
                     <div className="flex flex-wrap wrap gap-10 justify-center">
-                        {collaborators.map((item, i) =>
-                            <img src={item.url} key={i} alt={item.alt} className="w-fit h-10 tablet:h-12 opacity-[0.55] hover:opacity-100 transition" />
-                        )}
+                        {collaborators.map((item, i) => (
+                            <img
+                                src={item.url}
+                                key={i}
+                                alt={item.alt}
+                                className="w-fit h-10 tablet:h-12 opacity-[0.55] hover:opacity-100 transition"
+                            />
+                        ))}
                     </div>
                 </div>
             </div>

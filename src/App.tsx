@@ -7,18 +7,19 @@ import Events from "./sections/Events"
 import Footer from "./sections/Footer"
 import Hero from "./sections/Hero"
 
-const App = () => {
-
-	return <div>
-		<Nav />
-		<Hero />
-		<About />
-		<Classes />
-		<Events />
-		<Contact />
-		<Footer />
-		<ScrollButton />
-	</div>
+function App() {
+    return (
+        <>
+            <Nav />
+            <Hero />
+            <About />
+            <Classes />
+            <Events />
+            <Contact />
+            <Footer />
+            <ScrollButton />
+        </>
+    )
 }
 
 export default App
