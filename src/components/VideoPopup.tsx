@@ -8,11 +8,10 @@ type Props = {
 
 const variants = {
     hidden: { x: "-100%", display: "none" },
-    visible: { x: 0, display: "", transitionEnd: { display: "none" } }
+    visible: { x: 0, display: "", transitionEnd: { display: "none" } },
 }
 
 const VideoPopup = ({ setVideoOpened }: Props) => {
-
     return (
         <>
             <div
@@ -27,7 +26,7 @@ const VideoPopup = ({ setVideoOpened }: Props) => {
                 variants={variants}
                 initial="hidden"
                 animate="visible"
-                transition={{ ease: [0.22, 0.50, 0.08, 1], duration: 2.5 }}
+                transition={{ ease: [0.22, 0.5, 0.08, 1], duration: 2.5 }}
                 className="absolute w-full h-full bg-white z-50"
             />
         </>

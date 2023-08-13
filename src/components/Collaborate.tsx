@@ -12,10 +12,17 @@ import wave3 from "../assets/wave-6.svg"
 import Image from "../components/Image"
 import { ClasesText } from "../utils/Texts"
 
-const collaborators = [dashAndStars, caraibi, ecoderma, byoode, kombucha, yohemian, relax]
+const collaborators = [
+    { url: dashAndStars, alt: "Dash and Stars" },
+    { url: caraibi, alt: "Caraibi" },
+    { url: ecoderma, alt: "Ecoderma" },
+    { url: byoode, alt: "Byoode" },
+    { url: kombucha, alt: "Kombucha" },
+    { url: yohemian, alt: "Yohemian" },
+    { url: relax, alt: "Relax" },
+]
 
 const Collaborate = () => {
-
     return (
         <div
             className="flex w-full relative h-[800px] bg-cover bg-center bg-no-repeat bg-fixed items-center justify-center"
@@ -25,7 +32,7 @@ const Collaborate = () => {
                 src={wave2}
                 fallback={wave2}
                 type="image/svg"
-                alt="Wave transition"
+                alt="Collaborate top page transition"
                 className="absolute w-full h-fit top-[-1px] left-0"
             />
             <div className="w-full h-full absolute bg-background/90" />
@@ -44,9 +51,14 @@ const Collaborate = () => {
                         {ClasesText.colaborators}
                     </span>
                     <div className="flex flex-wrap wrap gap-10 justify-center">
-                        {collaborators.map((item, i) =>
-                            <img src={item} key={i} alt="Collaborator" className="w-fit h-10 tablet:h-12 opacity-[0.55] hover:opacity-100 transition" />
-                        )}
+                        {collaborators.map((item, i) => (
+                            <img
+                                src={item.url}
+                                key={i}
+                                alt={item.alt}
+                                className="w-fit h-10 tablet:h-12 opacity-[0.55] hover:opacity-100 transition"
+                            />
+                        ))}
                     </div>
                 </div>
             </div>
@@ -54,7 +66,7 @@ const Collaborate = () => {
                 src={wave3}
                 fallback={wave3}
                 type="image/svg"
-                alt="Wave transition"
+                alt="Collaborate bottom page transition"
                 className="absolute w-full h-fit bottom-[-1px] left-0"
             />
         </div>
