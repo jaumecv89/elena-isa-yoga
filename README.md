@@ -1,4 +1,5 @@
 <img src="/src/assets/thumbnail.jpg" width="100%" />
+[![Tests](https://github.com/jaumecv89/elena-isa-yoga/actions/workflows/tests.yml/badge.svg)](https://github.com/jaumecv89/elena-isa-yoga/actions/workflows/tests.yml)
 
 # Elena Isa - Yoga teacher
 
