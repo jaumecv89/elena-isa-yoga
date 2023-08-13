@@ -72,7 +72,7 @@ const Hero = () => {
                                     videoOpened ? "text-primary" : "text-white"
                                 }
                             >
-                                {HeroText.title[0]}
+                                {HeroText.title1}
                             </span>
                             <span
                                 className={
@@ -81,7 +81,7 @@ const Hero = () => {
                                         : "text-alternative"
                                 }
                             >
-                                {HeroText.title[1]}
+                                {HeroText.title2}
                             </span>
                         </h1>
                     </motion.div>

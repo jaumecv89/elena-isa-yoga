@@ -32,7 +32,7 @@ const Collaborate = () => {
                 src={wave2}
                 fallback={wave2}
                 type="image/svg"
-                alt="Top page transition"
+                alt="Collaborate top page transition"
                 className="absolute w-full h-fit top-[-1px] left-0"
             />
             <div className="w-full h-full absolute bg-background/90" />
@@ -66,7 +66,7 @@ const Collaborate = () => {
                 src={wave3}
                 fallback={wave3}
                 type="image/svg"
-                alt="Bottom page transition"
+                alt="Collaborate bottom page transition"
                 className="absolute w-full h-fit bottom-[-1px] left-0"
             />
         </div>

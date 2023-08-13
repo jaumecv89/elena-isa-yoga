@@ -18,11 +18,11 @@ const About = () => {
                     />
                     <div className="flex flex-col tablet:w-[50%] tablet:text-left">
                         <span className="heading-title">
-                            {AboutText.heading[0]}
+                            {AboutText.heading1}
                         </span>
-                        <h2 className="pb-5">{AboutText.title[0]}</h2>
-                        <p>{AboutText.paragraph[0]}</p>
-                        <p className="mb-0">{AboutText.paragraph[1]}</p>
+                        <h2 className="pb-5">{AboutText.title1}</h2>
+                        <p>{AboutText.paragraph1}</p>
+                        <p className="mb-0">{AboutText.paragraph2}</p>
                     </div>
                 </div>
                 <div className="flex flex-col gap-5 items-center text-secondary">
@@ -45,12 +45,12 @@ const About = () => {
                 <div className="container mx-auto py-20 tablet:pb-0 text-center">
                     <div className="flex flex-col items-center">
                         <span className="heading-title">
-                            {AboutText.heading[1]}
+                            {AboutText.heading2}
                         </span>
-                        <h2 className="pb-5">{AboutText.title[1]}</h2>
+                        <h2 className="pb-5">{AboutText.title2}</h2>
                         <div className="flex flex-col tablet:w-[80%] mb-10 gap-5 text-left">
-                            <p>{AboutText.paragraph[2]}</p>
-                            <p>{AboutText.paragraph[5]}</p>
+                            <p>{AboutText.paragraph3}</p>
+                            <p>{AboutText.paragraph4}</p>
                         </div>
                         <div className="flex flex-col tablet:flex-row gap-5 mb-20">
                             <Link
@@ -58,7 +58,7 @@ const About = () => {
                                 smooth="true"
                                 className="btn-primary"
                             >
-                                {AboutText.button}
+                                {AboutText.button1}
                             </Link>
                             <Link
                                 to="events"
@@ -76,9 +76,9 @@ const About = () => {
                                 className="w-full h-full rounded-xl"
                             />
                             <div className="relative tablet:w-[60%] tablet:top-[-150px] pt-10 tablet:p-10 tablet:rounded-lg tablet:shadow-lg tablet:bg-background">
-                                <h2>{AboutText.title[2]}</h2>
-                                <p>{AboutText.paragraph[3]}</p>
-                                <p>{AboutText.paragraph[4]}</p>
+                                <h2>{AboutText.title3}</h2>
+                                <p>{AboutText.paragraph5}</p>
+                                <p>{AboutText.paragraph6}</p>
                             </div>
                         </div>
                     </div>
