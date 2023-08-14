@@ -18,7 +18,7 @@ const animationVariants = {
     openedVideoAnimation: {
         opacity: [1, 0],
         scale: [1, 20],
-        transition: { ease: "easeIn", duration: 1, delay: 1.5 },
+        transition: { ease: "easeIn", duration: 0.5, delay: 0.75 },
     },
 }
 

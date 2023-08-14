@@ -1,8 +1,9 @@
+import { motion } from "framer-motion"
+import image from "../assets/contact-image.webp"
 import wave from "../assets/wave-3.svg"
 import EventsList from "../components/EventsList"
 import Image from "../components/Image"
 import { EventsText } from "../utils/Texts"
-import image from "../assets/contact-image.webp"
 
 const Events = () => {
     return (
@@ -10,14 +11,31 @@ const Events = () => {
             <div className="container mx-auto py-28 text-center">
                 <div className="flex flex-col items-center mb-12 tablet:mb-16">
                     <div className="flex flex-col tablet:w-[60%]">
-                        <span className="heading-title">
+                        <motion.span
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 1, delay: 0.3 }}
+                            viewport={{ once: true }}
+                            className="heading-title"
+                        >
                             {EventsText.heading}
-                        </span>
-                        <h2>{EventsText.title}</h2>
+                        </motion.span>
+                        <motion.h2
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                        >
+                            {EventsText.title}
+                        </motion.h2>
                     </div>
                 </div>
                 <EventsList />
-                <div
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.75, delay: 0.5 }}
+                    viewport={{ once: true }}
                     className="hidden tablet:block absolute bottom-0 right-[0] tablet:w-[30%] h-[80%] bg-cover bg-no-repeat z-0"
                     style={{ backgroundImage: `url(${image})` }}
                 />

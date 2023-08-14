@@ -23,11 +23,11 @@ export const AboutText = {
     paragraph3:
         "Hace años, empecé mi viaje en el yoga, buscando equilibrio y paz interior. Descubrí la magia de conectar mente, cuerpo y espíritu, encontrando calma y serenidad en cada postura. El yoga se convirtió en mi refugio, guiándome en momentos difíciles y enseñándome a crecer. Ahora, como profesora, deseo inspirar a otros en su propio camino de autodescubrimiento.",
     paragraph4:
-        "Mi filosofía en el yoga se basa en cultivar la conexión profunda entre el cuerpo, la mente y el espíritu. Creo en honrar y respetar nuestro ser en su totalidad, y en encontrar equilibrio y armonía a través de la práctica consciente.",
-    paragraph5:
-        "Para mí, el yoga es una herramienta poderosa para el autodescubrimiento, la transformación y el crecimiento interior. Es un camino de amor propio, aceptación y gratitud, que nos invita a vivir plenamente en el presente y a encontrar la paz en nuestro interior.",
-    paragraph6:
         "He realizado varías formaciones durante estos años y sigo formándome día tras día, ya que creo que el yoga es el camino del eterno estudiante. Mi práctica y enseñanza se basan sobretodo en las disciplinas del Ashtanga Yoga y Rocket Yoga, estilos dinámicos que nutren cuerpo y alma. En mis clases me gusta acompañar y guiar a mis alumnos ofreciéndoles variantes y ajustes para que sean capaces de crear su propia autopráctica independiente.",
+    paragraph5:
+        "Mi filosofía en el yoga se basa en cultivar la conexión profunda entre el cuerpo, la mente y el espíritu. Creo en honrar y respetar nuestro ser en su totalidad, y en encontrar equilibrio y armonía a través de la práctica consciente.",
+    paragraph6:
+        "Para mí, el yoga es una herramienta poderosa para el autodescubrimiento, la transformación y el crecimiento interior. Es un camino de amor propio, aceptación y gratitud, que nos invita a vivir plenamente en el presente y a encontrar la paz en nuestro interior.",
     quote: `"El verdadero yoga no es sobre la forma del cuerpo, sino sobre la forma de tu vida".`,
     author: "- Aadil Palkhivala",
     button1: "Descubre mis clases",

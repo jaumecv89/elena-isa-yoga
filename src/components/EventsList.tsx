@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import { getAllEvents } from "../graphql/Queries"
 import { IEvent } from "../types/Event"
 import { EventsListText } from "../utils/Texts"
@@ -29,11 +30,17 @@ const EventsList = () => {
         )
 
     return (
-        <div className="flex flex-col w-full tablet:w-[80%] desktop:w-[70%] gap-7 mb-10">
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="flex flex-col w-full tablet:w-[80%] desktop:w-[70%] gap-7 mb-10"
+        >
             {events.map((event: IEvent) => (
                 <EventCard event={event} key={event.title} />
             ))}
-        </div>
+        </motion.div>
     )
 }
 

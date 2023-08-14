@@ -68,7 +68,13 @@ const TestimonialsList = () => {
 
     return (
         <>
-            <div className="flex flex-col items-center gap-10">
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="flex flex-col items-center gap-10"
+            >
                 <div className="flex items-center gap-[10%] overflow-hidden">
                     <button
                         onClick={handlePrev}
@@ -132,7 +138,7 @@ const TestimonialsList = () => {
                         <IoIosArrowForward />
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

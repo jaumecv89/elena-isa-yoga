@@ -74,8 +74,8 @@ const EventCard: React.FC<Props> = ({ event }) => {
                         animate="open"
                         exit="collapsed"
                         variants={{
-                            open: { opacity: 1, y: 0, height: "auto" },
-                            collapsed: { opacity: 0, y: -50, height: 0 },
+                            open: { height: "auto" },
+                            collapsed: { height: 0 },
                         }}
                         transition={{
                             duration: 0.8,
@@ -83,10 +83,20 @@ const EventCard: React.FC<Props> = ({ event }) => {
                         }}
                         className="flex flex-col z-20"
                     >
-                        <div className="flex flex-col px-6 pb-6 gap-6">
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1, transition: { delay: 0.3 } }}
+                            exit={{ opacity: 0, transition: { duration: 0 } }}
+                            className="flex flex-col px-6 pb-6 gap-6"
+                        >
                             <p className="text-left m-0">{event.description}</p>
-                        </div>
-                        <div className="flex px-6 pb-6 items-center justify-between">
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1, transition: { delay: 0.3 } }}
+                            exit={{ opacity: 0, transition: { duration: 0 } }}
+                            className="flex px-6 pb-6 items-center justify-between"
+                        >
                             <Link
                                 to="contact"
                                 smooth="true"
@@ -98,7 +108,7 @@ const EventCard: React.FC<Props> = ({ event }) => {
                             <span className="text-primary border-[1px] border-alternative uppercase text-[17px] py-[16px] px-[40px] leading-4 bg-white rounded-3xl justify-center">
                                 {event.price ? `${event.price} €` : "-"}
                             </span>
-                        </div>
+                        </motion.div>
                     </motion.div>
                 )}
             </AnimatePresence>
