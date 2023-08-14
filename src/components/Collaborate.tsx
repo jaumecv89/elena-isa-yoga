@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import { Link } from "react-scroll"
 import image from "../assets/classes-image-1.webp"
 import byoode from "../assets/logo-byoode.webp"
@@ -37,20 +38,44 @@ const Collaborate = () => {
             />
             <div className="w-full h-full absolute bg-background/90" />
             <div className="flex flex-col container relative py-20 items-center text-center">
-                <h2 className="font-bold text-primary pb-5">
+                <motion.h2
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true }}
+                    className="font-bold text-primary pb-5"
+                >
                     {ClasesText.colaboration}
-                </h2>
-                <p className="text-secondary tablet:w-[80%] desktop:w-[60%]">
+                </motion.h2>
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.75, delay: 0.5 }}
+                    viewport={{ once: true }}
+                    className="text-secondary tablet:w-[80%] desktop:w-[60%]"
+                >
                     {ClasesText.colaborationParagraph}
-                </p>
+                </motion.p>
                 <Link to="contact" smooth="true" className="btn-primary mt-5">
                     {ClasesText.contact}
                 </Link>
                 <div className="flex flex-col mt-24">
-                    <span className="font-primary text-text uppercase pb-8 tracking-widest">
+                    <motion.span
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.75, delay: 0.5 }}
+                        viewport={{ once: true }}
+                        className="font-primary text-text uppercase pb-8 tracking-widest"
+                    >
                         {ClasesText.colaborators}
-                    </span>
-                    <div className="flex flex-wrap wrap gap-10 justify-center">
+                    </motion.span>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.75, delay: 0.75 }}
+                        viewport={{ once: true }}
+                        className="flex flex-wrap wrap gap-10 justify-center"
+                    >
                         {collaborators.map((item, i) => (
                             <img
                                 src={item.url}
@@ -59,7 +84,7 @@ const Collaborate = () => {
                                 className="w-fit h-10 tablet:h-12 opacity-[0.55] hover:opacity-100 transition"
                             />
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
             </div>
             <Image

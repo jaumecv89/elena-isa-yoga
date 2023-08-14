@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import { describe } from "vitest"
+import { beforeEach } from "vitest"
 import Contact from "../sections/Contact"
 import { ContactText } from "../utils/Texts"
 

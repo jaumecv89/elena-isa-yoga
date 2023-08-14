@@ -1,4 +1,5 @@
 import emailjs from "@emailjs/browser"
+import { motion } from "framer-motion"
 import { FormEvent, useRef, useState } from "react"
 import { FormText } from "../utils/Texts"
 
@@ -40,7 +41,11 @@ const ContactForm = () => {
     }
 
     return (
-        <form
+        <motion.form
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
             onSubmit={sendEmail}
             className="flex flex-col w-full gap-4 mb-16 tablet:mb-0"
         >
@@ -84,7 +89,7 @@ const ContactForm = () => {
                     )}
                 </div>
             </div>
-        </form>
+        </motion.form>
     )
 }
 
