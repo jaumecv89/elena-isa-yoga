@@ -106,7 +106,7 @@ const About = () => {
                             <motion.p
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
-                                transition={{ duration: 1, delay: 0.5 }}
+                                transition={{ duration: 1, delay: 0.35 }}
                                 viewport={{ once: true }}
                             >
                                 {AboutText.paragraph3}
@@ -114,7 +114,7 @@ const About = () => {
                             <motion.p
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
-                                transition={{ duration: 1, delay: 0.75 }}
+                                transition={{ duration: 1, delay: 0.5 }}
                                 viewport={{ once: true }}
                             >
                                 {AboutText.paragraph4}
@@ -123,7 +123,7 @@ const About = () => {
                         <motion.div
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
-                            transition={{ duration: 1, delay: 1 }}
+                            transition={{ duration: 1, delay: 0.75 }}
                             className="flex flex-col tablet:flex-row gap-5 mb-20"
                         >
                             <Link
@@ -151,7 +151,7 @@ const About = () => {
                             <motion.div
                                 initial={{ opacity: 0, y: "100px" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1, delay: 0.75 }}
+                                transition={{ duration: 0.5, delay: 0.35 }}
                                 viewport={{ once: true }}
                                 className="relative tablet:w-[60%] tablet:top-[-150px] pt-10 tablet:p-10 tablet:rounded-lg tablet:shadow-lg tablet:bg-background"
                             >
