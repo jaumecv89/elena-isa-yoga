@@ -8,12 +8,6 @@ import Image from "../components/Image"
 import Testimonials from "../components/Testimonials"
 import { ClasesText } from "../utils/Texts"
 
-const variants = {
-    hiddenLeft: { opacity: 0, x: "-100px" },
-    hiddenRight: { opacity: 0, x: "100px" },
-    display: { opacity: 1, x: 0 },
-}
-
 const Classes = () => {
     return (
         <section id="classes" className="select-none">
@@ -44,24 +38,31 @@ const Classes = () => {
                         viewport={{ once: true }}
                         className="tablet:w-[90%] desktop:w-[70%]"
                     >
-                        {ClasesText.paragraph}
+                        {ClasesText.paragraph1}
+                    </motion.p>
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 0.75 }}
+                        viewport={{ once: true }}
+                        className="tablet:w-[90%] desktop:w-[70%]"
+                    >
+                        {ClasesText.paragraph2}
                     </motion.p>
                 </div>
                 <div className="flex flex-col gap-14 items-center">
                     <div className="flex flex-col tablet:flex-row w-full relative items-center justify-center">
                         <motion.div
-                            variants={variants}
-                            initial="hiddenLeft"
-                            whileInView="display"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.75, delay: 0.5 }}
                             viewport={{ once: true }}
                             className="w-full tablet:w-[40%] h-[50vh] desktop:h-[60vh] mb-10 tablet:mb-0 bg-cover bg-no-repeat rounded-lg relative tablet:right-[-5%]"
                             style={{ backgroundImage: `url(${image4})` }}
                         />
                         <motion.div
-                            variants={variants}
-                            initial="hiddenRight"
-                            whileInView="display"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.75, delay: 0.5 }}
                             viewport={{ once: true }}
                             className="flex flex-col tablet:w-[40%] desktop:w-[30%] tablet:text-left bg-background tablet:p-10 tablet:left-[-5%] relative"
@@ -72,9 +73,16 @@ const Classes = () => {
                     </div>
                     <div className="flex flex-col tablet:flex-row w-full relative items-center justify-center">
                         <motion.div
-                            variants={variants}
-                            initial="hiddenLeft"
-                            whileInView="display"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 0.75, delay: 0.5 }}
+                            viewport={{ once: true }}
+                            className="tablet:hidden w-full h-[50vh] mb-10 bg-cover bg-center bg-no-repeat rounded-lg"
+                            style={{ backgroundImage: `url(${image3})` }}
+                        />
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.75, delay: 0.5 }}
                             viewport={{ once: true }}
                             className="flex flex-col tablet:w-[40%] desktop:w-[30%] tablet:text-right bg-background tablet:p-10 tablet:left-[5%] relative z-10"
@@ -83,9 +91,8 @@ const Classes = () => {
                             <p className="m-0">{ClasesText.class2Text}</p>
                         </motion.div>
                         <motion.div
-                            variants={variants}
-                            initial="hiddenRight"
-                            whileInView="display"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.75, delay: 0.5 }}
                             viewport={{ once: true }}
                             className="hidden tablet:flex w-[40%] h-[50vh] desktop:h-[60vh] mb-0 bg-cover bg-center bg-no-repeat rounded-lg relative right-[5%]"
@@ -94,18 +101,16 @@ const Classes = () => {
                     </div>
                     <div className="flex flex-col tablet:flex-row w-full relative items-center justify-center">
                         <motion.div
-                            variants={variants}
-                            initial="hiddenLeft"
-                            whileInView="display"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.75, delay: 0.5 }}
                             viewport={{ once: true }}
                             className="w-full tablet:w-[40%] h-[50vh] desktop:h-[60vh] mb-10 tablet:mb-0 bg-cover bg-no-repeat rounded-lg relative tablet:right-[-5%]"
                             style={{ backgroundImage: `url(${image2})` }}
                         />
                         <motion.div
-                            variants={variants}
-                            initial="hiddenRight"
-                            whileInView="display"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.75, delay: 0.5 }}
                             viewport={{ once: true }}
                             className="flex flex-col tablet:w-[40%] desktop:w-[30%] tablet:text-left bg-background tablet:p-10 tablet:left-[-5%] relative"

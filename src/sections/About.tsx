@@ -14,11 +14,11 @@ const About = () => {
             <div className="container mx-auto py-28 text-center">
                 <div className="flex flex-col tablet:flex-row gap-16 mb-28">
                     <motion.div
-                        initial={{ opacity: 0, x: "-100px" }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="flex h-[30em] tablet:h-auto tablet:w-[50%] bg-no-repeat bg-cover bg-center rounded-lg"
+                        className="flex h-[50vh] tablet:h-auto tablet:w-[50%] bg-no-repeat bg-cover bg-center rounded-lg"
                         style={{ backgroundImage: `url(${webpImage1})` }}
                     />
                     <div className="flex flex-col tablet:w-[50%] tablet:text-left">
@@ -32,11 +32,11 @@ const About = () => {
                             {AboutText.heading1}
                         </motion.span>
                         <motion.h2
-                            initial={{ opacity: 0, x: "100px" }}
-                            whileInView={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
                             transition={{ duration: 1 }}
                             viewport={{ once: true }}
-                            className="pb-5"
+                            className="pb-5 overflow-"
                         >
                             {AboutText.title1}
                         </motion.h2>
@@ -149,7 +149,7 @@ const About = () => {
                                 className="w-full h-full rounded-xl"
                             />
                             <motion.div
-                                initial={{ opacity: 0, y: "100px" }}
+                                initial={{ opacity: 0, y: 100 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.35 }}
                                 viewport={{ once: true }}

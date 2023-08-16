@@ -45,8 +45,8 @@ const Contact = () => {
                     <ContactForm />
                     <div className="flex flex-col mx-[10%] tablet:mx-0 tablet:mr-12 desktop:mr-16 gap-10">
                         <motion.div
-                            initial={{ opacity: 0, x: 100 }}
-                            whileInView={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.5 }}
                             viewport={{ once: true }}
                             className="icons-container"
@@ -67,8 +67,8 @@ const Contact = () => {
                             </div>
                         </motion.div>
                         <motion.div
-                            initial={{ opacity: 0, x: 100 }}
-                            whileInView={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.75 }}
                             viewport={{ once: true }}
                             className="icons-container"
@@ -90,8 +90,8 @@ const Contact = () => {
                         </motion.div>
                         {SocialMedia.map((item, i) => (
                             <motion.div
-                                initial={{ opacity: 0, x: 100 }}
-                                whileInView={{ opacity: 1, x: 0 }}
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
                                 transition={{
                                     duration: 0.5,
                                     delay: 0.75 + 0.25 * (i + 1),
