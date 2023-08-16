@@ -84,8 +84,10 @@ export const TestimonialsText = {
 export const ClasesText = {
     heading: "Explora y aprende",
     title: "Clases de Yoga",
-    paragraph:
-        "Me complace enormemente compartir este espacio de autodescubrimiento y bienestar. Aquí, en mis clases, podréis embarcaros en un apasionante viaje a través de diferentes estilos de yoga, cada uno con su propia esencia y beneficios únicos. Permitirme guiaros a través de este camino de transformación, donde aprenderemos juntos a nutrir cuerpo, mente y alma. En mis clases, podréis experimentar una amplia variedad de enfoques de yoga, aquí os presento algunos de ellos.",
+    paragraph1:
+        "Me complace enormemente compartir este espacio de autodescubrimiento y bienestar. Aquí, en mis clases, podréis embarcaros en un apasionante viaje a través de diferentes estilos de yoga, cada uno con su propia esencia y beneficios únicos.",
+    paragraph2:
+        "Permitirme guiaros a través de este camino de transformación, donde aprenderemos juntos a nutrir cuerpo, mente y alma. En mis clases, podréis experimentar una amplia variedad de enfoques de yoga, aquí os presento algunos de ellos.",
     colaboration: "¿Colaboramos?",
     colaborationParagraph:
         "Descubre nuevas posibilidades con un exclusivo taller personalizado. Crea un evento o retiro único para tu empresa.",
