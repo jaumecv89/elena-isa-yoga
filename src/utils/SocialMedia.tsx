@@ -10,8 +10,8 @@ const SocialMedia = [
     },
     {
         name: "Facebook",
-        text: "Elena Isa",
-        link: "https://www.facebook.com/elena.isa.1",
+        text: "Yogabyelena",
+        link: "https://www.facebook.com/profile.php?id=100063998897174",
         icon: <BsFacebook />,
         key: "facebook",
     },
