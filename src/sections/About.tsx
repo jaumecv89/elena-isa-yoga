@@ -142,12 +142,19 @@ const About = () => {
                             </Link>
                         </motion.div>
                         <div className="flex flex-col tablet:w-[85%] items-center">
-                            <Image
-                                src={webpImage2}
-                                fallback={jpegImage2}
-                                alt="Clase de yoga"
-                                className="w-full h-full rounded-xl"
-                            />
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{ duration: 1 }}
+                                viewport={{ once: true }}
+                            >
+                                <Image
+                                    src={webpImage2}
+                                    fallback={jpegImage2}
+                                    alt="Clase de yoga"
+                                    className="w-full h-full rounded-xl"
+                                />
+                            </motion.div>
                             <motion.div
                                 initial={{ opacity: 0, y: 100 }}
                                 whileInView={{ opacity: 1, y: 0 }}
