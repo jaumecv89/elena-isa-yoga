@@ -123,7 +123,7 @@ const About = () => {
                         <motion.div
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
-                            transition={{ duration: 1, delay: 0.75 }}
+                            transition={{ duration: 1, delay: 0.5 }}
                             className="flex flex-col tablet:flex-row gap-5 mb-20"
                         >
                             <Link

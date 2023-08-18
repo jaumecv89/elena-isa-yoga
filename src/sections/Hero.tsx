@@ -54,7 +54,7 @@ const Hero = () => {
                 }w-full h-screen object-cover`}
             />
             <div className="flex flex-col items-center">
-                <div className="flex flex-col absolute px-[15px] w-full h-full top-0 justify-center items-center text-center overflow-hidden">
+                <div className="flex flex-col absolute px-[15px] w-full h-full top-0 justify-center items-center text-center overflow-hidden gap-10">
                     <motion.div
                         variants={animationVariants}
                         animate={
@@ -94,25 +94,33 @@ const Hero = () => {
                         whileInView="visible"
                         viewport={{ once: true }}
                         transition={{ duration: 2, delay: 1.5 }}
-                        className="relative top-4 pt-10 text-white text-center text-lg desktop:text-xl"
+                        className="text-white text-lg desktop:text-xl"
                     >
                         {HeroText.paragraph}
                     </motion.span>
-                    <div className="flex flex-col relative top-24 items-center gap-10">
-                        <button
-                            className="btn-primary flex flex-row items-center gap-2"
-                            onClick={toggleVideoOpened}
-                        >
-                            {HeroText.button}
-                        </button>
-                        <Link
-                            to="about"
-                            smooth={true}
-                            className="text-white text-xl bg-primary p-3 rounded-full shadow-lg cursor-pointer transition ease-in-out hover:bg-accent hover:translate-y-0.5"
-                        >
-                            <IoIosArrowDown />
-                        </Link>
-                    </div>
+                    <motion.button
+                        variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                        }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 1, delay: 1.75 }}
+                        className="btn-primary"
+                        onClick={toggleVideoOpened}
+                    >
+                        {HeroText.button}
+                    </motion.button>
+                </div>
+                <div className="flex w-full absolute flex-col bottom-0 left-0 items-center pb-10 gap-10">
+                    <Link
+                        to="about"
+                        smooth={true}
+                        className="text-white text-xl bg-primary p-3 rounded-full shadow-lg cursor-pointer transition ease-in-out hover:bg-accent hover:translate-y-0.5"
+                    >
+                        <IoIosArrowDown />
+                    </Link>
                 </div>
             </div>
         </section>

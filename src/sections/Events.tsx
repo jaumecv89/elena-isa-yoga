@@ -36,7 +36,7 @@ const Events = () => {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.75, delay: 0.5 }}
                     viewport={{ once: true }}
-                    className="hidden tablet:block absolute bottom-0 right-[0] tablet:w-[30%] h-[80%] bg-cover bg-no-repeat z-0"
+                    className="hidden tablet:block absolute bottom-0 right-0 w-[27%] desktop:w-[30%] h-[50em] desktop:h-[60em] bg-cover bg-no-repeat z-0"
                     style={{ backgroundImage: `url(${image})` }}
                 />
             </div>

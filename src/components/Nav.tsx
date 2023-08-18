@@ -23,17 +23,17 @@ const Nav: React.FC = () => {
     }, [isOpen])
 
     return (
-        <nav className="flex w-full h-full tablet:h-auto absolute justify-center text-white select-none">
+        <nav className="flex w-full h-full desktop:h-auto absolute justify-center text-white select-none">
             <div
                 className={`flex container justify-between items-center py-8 absolute z-30`}
             >
                 <span className="font-primary text-2xl uppercase">
                     {NavText.title}
                 </span>
-                <div className="tablet:hidden">
+                <div className="desktop:hidden">
                     <Hamburger toggled={isOpen} toggle={setOpen} />
                 </div>
-                <ul className="hidden tablet:flex">
+                <ul className="hidden desktop:flex">
                     {MenuItems.map((item) => (
                         <li
                             className="flex pl-10 py-[13px] text-base text-center items-center"

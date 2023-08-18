@@ -29,7 +29,7 @@ const Footer = () => {
                 <ul className="flex justify-center text-sm tablet:text-md text-paragraph pb-14">
                     {MenuItems.map((item) => (
                         <li
-                            className="flex px-5 py-[13px] text-center items-center"
+                            className="flex px-3 tablet:px-5 py-[13px] text-center items-center"
                             key={item.key}
                         >
                             <Link

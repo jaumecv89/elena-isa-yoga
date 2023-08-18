@@ -26,7 +26,7 @@ const collaborators = [
 const Collaborate = () => {
     return (
         <div
-            className="flex w-full relative h-[800px] bg-cover bg-center bg-no-repeat bg-fixed items-center justify-center"
+            className="flex relative h-[800px] bg-cover bg-center bg-no-repeat items-center justify-center"
             style={{ backgroundImage: `url(${image})` }}
         >
             <Image
@@ -81,7 +81,7 @@ const Collaborate = () => {
                                 src={item.url}
                                 key={i}
                                 alt={item.alt}
-                                className="w-fit h-10 tablet:h-12 opacity-[0.55] hover:opacity-100 transition"
+                                className="w-fit h-10 desktop:h-12 opacity-[0.55] hover:opacity-100 transition"
                             />
                         ))}
                     </motion.div>
