@@ -3,6 +3,7 @@
 # Elena Isa - Yoga teacher
 
 [![Tests](https://github.com/jaumecv89/elena-isa-yoga/actions/workflows/tests.yml/badge.svg)](https://github.com/jaumecv89/elena-isa-yoga/actions/workflows/tests.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/38153476-2d83-4c21-9d09-3aca86c37329/deploy-status)](https://app.netlify.com/sites/elenaisa/deploys)
 
 Welcome to the Elena Isa - Yoga Teacher Website repository! This project is dedicated to showcasing Elena Isa's yoga services and providing valuable resources to her students. The website is built using React, Typescript, Vite, Vitest, and Tailwind CSS, and incorporates various additional features such as animation, smooth scrolling, icons, email functionality, and an animated hamburger menu.
 
