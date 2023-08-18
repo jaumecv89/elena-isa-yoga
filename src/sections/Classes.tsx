@@ -57,7 +57,7 @@ const Classes = () => {
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.75, delay: 0.5 }}
                             viewport={{ once: true }}
-                            className="w-full tablet:w-[40%] h-[50vh] desktop:h-[60vh] mb-10 tablet:mb-0 bg-cover bg-no-repeat rounded-lg relative tablet:right-[-5%]"
+                            className="w-full tablet:w-[40%] h-[50vh] tablet:h-[30em] desktop:h-[40em] mb-10 tablet:mb-0 bg-cover bg-no-repeat rounded-lg relative tablet:right-[-5%]"
                             style={{ backgroundImage: `url(${image4})` }}
                         />
                         <motion.div
@@ -95,7 +95,7 @@ const Classes = () => {
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.75, delay: 0.5 }}
                             viewport={{ once: true }}
-                            className="hidden tablet:flex w-[40%] h-[50vh] desktop:h-[60vh] mb-0 bg-cover bg-center bg-no-repeat rounded-lg relative right-[5%]"
+                            className="hidden tablet:flex w-[40%] h-[30em] desktop:h-[40em] mb-0 bg-cover bg-center bg-no-repeat rounded-lg relative right-[5%]"
                             style={{ backgroundImage: `url(${image3})` }}
                         />
                     </div>
@@ -105,7 +105,7 @@ const Classes = () => {
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.75, delay: 0.5 }}
                             viewport={{ once: true }}
-                            className="w-full tablet:w-[40%] h-[50vh] desktop:h-[60vh] mb-10 tablet:mb-0 bg-cover bg-no-repeat rounded-lg relative tablet:right-[-5%]"
+                            className="w-full tablet:w-[40%] h-[50vh] tablet:h-[30em] desktop:h-[40em] mb-10 tablet:mb-0 bg-cover bg-no-repeat rounded-lg relative tablet:right-[-5%]"
                             style={{ backgroundImage: `url(${image2})` }}
                         />
                         <motion.div
