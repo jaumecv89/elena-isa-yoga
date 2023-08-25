@@ -11,9 +11,9 @@ export const HeroText = {
 }
 
 export const AboutText = {
-    heading1: "¿Quieres tiempo para respirar?",
+    heading1: "Fuerza, equilibrio y flexibilidad",
     heading2: "Mi historia",
-    title1: "El enfoque en la fuerza, el equilibrio y la flexibilidad.",
+    title1: "¿Quieres tiempo para respirar?",
     title2: "Un viaje a través del yoga.",
     title3: "Filosofía",
     paragraph1:
@@ -95,7 +95,7 @@ export const ClasesText = {
     colaborators: "Colaboradores",
     class1Title: "Ashtanga Yoga",
     class1Text:
-        "Para aquellas personas que buscan un desafío físico y mental, las clases de Ashtanga Yoga nos llevarán a través de una secuencia rigurosa y estructurada de posturas. Con el enfoque en la respiración ujjayi y la práctica constante, lograremos una mayor fuerza y resistencia.",
+        "El rocket yoga tienes sus raíces en el ashtanga. Fue creado por Larry Schultz, quien modificó las secuencias del ashtanga para hacerlas accesibles a todos los estudiantes. Trabaja tu fuerza tanto a nivel interno como externo con posturas retadoras y desafiantes.",
     class2Title: "Rocket Yoga",
     class2Text:
         "Una variante energizante del Ashtanga, que combina la disciplina del yoga tradicional con una dosis extra de diversión y creatividad. A través de secuencias desafiantes, te invito a superar tus límites y a descubrir tu fuerza interior de una manera dinámica y estimulante.",
