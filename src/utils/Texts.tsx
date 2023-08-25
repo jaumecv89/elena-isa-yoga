@@ -95,10 +95,10 @@ export const ClasesText = {
     colaborators: "Colaboradores",
     class1Title: "Ashtanga Yoga",
     class1Text:
-        "El rocket yoga tienes sus raíces en el ashtanga. Fue creado por Larry Schultz, quien modificó las secuencias del ashtanga para hacerlas accesibles a todos los estudiantes. Trabaja tu fuerza tanto a nivel interno como externo con posturas retadoras y desafiantes.",
+        "Es un estilo de yoga que se centra en la sincronización de la respiración con una serie de posturas progresivas y fluidas. Consta de seis series de asanas, diseñadas para fortalecer y purificar el cuerpo. Se enfoca en la práctica constante y el autocontrol, combinando movimiento, respiración y meditación para promover la fuerza física y la tranquilidad mental.",
     class2Title: "Rocket Yoga",
     class2Text:
-        "Una variante energizante del Ashtanga, que combina la disciplina del yoga tradicional con una dosis extra de diversión y creatividad. A través de secuencias desafiantes, te invito a superar tus límites y a descubrir tu fuerza interior de una manera dinámica y estimulante.",
+        "El Rocket yoga tienes sus raíces en el Ashtanga. Fue creado por Larry Schultz, quien modificó las secuencias del Ashtanga para hacerlas accesibles a todos los estudiantes. Trabaja tu fuerza tanto a nivel interno como externo, con posturas retadoras y desafiantes.",
     class3Title: "Vinyasa Flow",
     class3Text:
         "Fluyamos juntos con gracia y sincronicemos nuestra respiración con el movimiento en las clases de Vinyasa Flow. Esta forma dinámica de yoga nos invita a realizar una secuencia fluida de posturas que aumentarán nuestra fuerza, coordinación y nos conectarán con una sensación de fluidez en cada movimiento.",
