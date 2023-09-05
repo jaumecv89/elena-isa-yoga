@@ -17,9 +17,9 @@ export const AboutText = {
     title2: "Un viaje a través del yoga.",
     title3: "Filosofía",
     paragraph1:
-        "A través de la práctica consciente de posturas y la conexión con la respiración, descubrimos nuestra fortaleza interna, encontramos equilibrio entre cuerpo y mente, y desarrollamos una flexibilidad que trasciende lo físico.",
+        "Una respiración consciente es indispensable en nuestra práctica de yoga. Todo movimiento viene seguido de una respiración y es esencial para ejecutar las asanas de yoga.",
     paragraph2:
-        "Únete a mí en este viaje transformador hacia una vida más equilibrada y plena.",
+        "A través de una práctica consciente descubrimos nuestra fortaleza interna, encontrando equilibro entre el cuerpo y la mente.",
     paragraph3:
         "Hace años, empecé mi viaje en el yoga, buscando equilibrio y paz interior. Descubrí la magia de conectar mente, cuerpo y espíritu, encontrando calma y serenidad en cada postura. El yoga se convirtió en mi refugio, guiándome en momentos difíciles y enseñándome a crecer. Ahora, como profesora, deseo inspirar a otros en su propio camino de autodescubrimiento.",
     paragraph4:
