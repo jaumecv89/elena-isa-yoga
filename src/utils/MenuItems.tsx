@@ -5,7 +5,7 @@ const MenuItems = [
         key: "menu-about",
     },
     {
-        title: "Clases",
+        title: "Estilos",
         path: "classes",
         key: "menu-classes",
     },
