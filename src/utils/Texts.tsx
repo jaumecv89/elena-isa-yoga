@@ -40,7 +40,7 @@ export const ContactText = {
     paragraph:
         "Estoy emocionada de conectar contigo y explorar increíbles oportunidades de colaboración y retiros inspiradores. Si tienes ideas en mente o simplemente deseas compartir el amor por el yoga en todas sus dimensiones, no dudes en ponerte en contacto conmigo.",
     email: "Email",
-    contact: "contacto@elenaisa.com",
+    contact: "elenaisa.yoga@gmail.com",
     phone: "Teléfono",
     phoneContact: "+34 679 741 661",
 }
