@@ -59,7 +59,7 @@ const Contact = () => {
                                     {ContactText.email}
                                 </span>
                                 <a
-                                    href="mailto:contacto@elenaisa.com"
+                                    href="mailto:elenaisa.yoga@gmail.com"
                                     className="text-md font-bold text-secondary hover:text-primary transition"
                                 >
                                     {ContactText.contact}
